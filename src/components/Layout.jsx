@@ -83,7 +83,8 @@ export default function Layout({ t, lang, setLang, children }) {
                     <div className="space-y-4 text-sm">
                         <div className="font-serif text-xl text-slate-100 tracking-tight">Aureus Sigma Capital</div>
                         <div className="flex flex-col gap-2 text-slate-400">
-                            <a href="mailto:investors@aureussigma.com" className="hover:text-[#D4AF37] transition-colors">investors@aureussigma.com</a>
+                            <a href="mailto:contact@aureussigmacapital.com" className="hover:text-[#D4AF37] transition-colors">contact@aureussigmacapital.com</a>
+                            <a href="mailto:contact@ascap.vn" className="hover:text-[#D4AF37] transition-colors">contact@ascap.vn</a>
                             <span>{t.contact.note}</span>
                         </div>
                     </div>

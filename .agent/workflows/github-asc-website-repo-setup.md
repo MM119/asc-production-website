@@ -1,5 +1,5 @@
 ---
-description: Initialize and configure GitHub repository for deployment
+description: Initialize and configure GitHub repository for deployment (ASC Website)
 ---
 
 # GitHub Repository Setup
@@ -124,28 +124,24 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
-### Step 3.5: Initial Commit (AUTOMATED)
+### Step 3.5: Push to GitHub (AUTOMATED)
 
 // turbo
 ```bash
-git add .
-git commit -m "Initial commit: ASC website for GitHub Pages deployment"
-```
+# Set the remote origin to the ASC production website repo
+if git remote | grep -q "^origin$"; then
+  git remote set-url origin https://github.com/MM119/asc-production-website.git
+else
+  git remote add origin https://github.com/MM119/asc-production-website.git
+fi
 
-### Step 3.6: Create GitHub Repository (MANUAL)
-
-1. Go to https://github.com/new
-2. Create a new repository named `aureussigmacapital-website` (or preferred name)
-3. Keep it **public** (required for free GitHub Pages) or use **private** with GitHub Pro
-4. Do NOT initialize with README, .gitignore, or license
-
-### Step 3.7: Push to GitHub (AUTOMATED after Step 3.6)
-
-// turbo
-```bash
-git remote add origin git@github.com:YOUR_USERNAME/aureussigmacapital-website.git
 git branch -M main
+
+# Display status
+git status
+
+echo "Ready to push. If you have uncommitted changes, you generally should commit them first."
+echo "Running git push -u origin main..."
+
 git push -u origin main
 ```
-
-**Replace `YOUR_USERNAME` with your actual GitHub username or organization name.**
