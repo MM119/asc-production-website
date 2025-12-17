@@ -28,13 +28,11 @@ Please refer to the [Build Configuration](build-configuration.md) workflow for b
 
 ## Phase 3: GitHub Repository Setup 📦
 
-Please refer to the [GitHub Repository Setup](github-repo-setup.md) workflow for initialization and Actions setup.
+Please refer to the [GitHub Repository Setup](github-asc-website-repo-setup.md) workflow for initialization and Actions setup.
 
 ---
 
-## Phase 4: Enable GitHub Pages 🌐
 
-Please refer to the [Enable GitHub Pages](enable-github-pages.md) workflow for activation and initial verification.
 
 ---
 

@@ -145,3 +145,9 @@ echo "Running git push -u origin main..."
 
 git push -u origin main
 ```
+
+### Step 3.6: Verify Deployment (MANUAL)
+
+1. Go to the GitHub Actions page to check the deployment status.
+   - Link: https://github.com/MM119/asc-production-website/actions
+2. Note that Actions will auto-run and may take time to complete.

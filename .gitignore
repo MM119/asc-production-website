@@ -2,6 +2,9 @@
 node_modules/
 node_modules 2/
 
+# Build output (if not deploying from dist)
+# dist/
+
 # Environment files
 .env
 .env.local
@@ -15,7 +18,7 @@ node_modules 2/
 
 # OS files
 .DS_Store
-Thumbs.db
+thumbs.db
 
 # Logs
 *.log
