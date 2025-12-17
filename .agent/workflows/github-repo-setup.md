@@ -10,7 +10,11 @@ description: Initialize and configure GitHub repository for deployment
 
 // turbo
 ```bash
-git init
+if [ ! -d ".git" ]; then
+    git init
+else
+    echo "Git repository already initialized. Skipping."
+fi
 ```
 
 ### Step 3.2: Create .gitignore (AUTOMATED)
