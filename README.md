@@ -20,3 +20,4 @@ const LOGO_SRC = "/asc-logo.png";
 ## Notes
 - Tailwind is loaded via the Play CDN in `index.html` for fast preview (no config required). For production, set up Tailwind properly and remove the CDN.
 - Dependencies: react, recharts, framer-motion, lucide-react.
+# 404 Fix - Trigger Deploy
