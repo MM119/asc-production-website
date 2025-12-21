@@ -21,7 +21,7 @@ Log into your DNS provider and add the records below.
 > **Cloudflare vs GoDaddy:** If you bought your domain on GoDaddy but use Cloudflare to manage it (via nameservers), you must make these changes in the **Cloudflare Dashboard**, not GoDaddy.
 
 > [!TIP]
-> **Cloudflare Proxy Settings:** Set the Proxy Status to **"DNS Only" (Grey Cloud)** for the initial setup. GitHub needs to verify the domain to issue an SSL certificate. You can switch to "Proxied" (Orange Cloud) later once the site is live and HTTPS is enforced.
+> **Cloudflare Proxy Settings:** Set the Proxy Status to **"DNS Only" (Grey Cloud)** for the initial setup. This is required for GitHub to successfully verify the domain and issue an SSL certificate. Attempting to use the Orange Cloud proxy too early will cause the DNS check to fail.
 
 #### For Apex Domain (aureussigmacapital.com):
 
@@ -49,4 +49,14 @@ Log into your DNS provider and add the records below.
 1. Go back to **Settings** → **Pages**
 2. Wait for DNS check to pass (green checkmark)
 3. Check **Enforce HTTPS** checkbox
-4. Wait a few minutes for SSL certificate provisioning
+4. Wait a few minutes for SSL certificate provisioning.
+5. Confirm the site is accessible via `https://aureussigmacapital.com`.
+
+### Step 5.5: Switch to Cloudflare Proxy (OPTIONAL)
+
+Once the green "Enforce HTTPS" checkmark is visible and the site is working:
+
+1. Log back into **Cloudflare Dashboard**.
+2. Go to **DNS** → **Records**.
+3. Change the Proxy Status from **"DNS Only" (Grey Cloud)** to **"Proxied" (Orange Cloud)** for all A and CNAME records.
+4. This enables Cloudflare's CDN, DDoS protection, and performance optimizations.
