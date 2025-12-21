@@ -19,7 +19,7 @@ export default function PerformanceSection({ data }) {
                         <div className="p-2 bg-blue-50 rounded-lg">
                             <FileText className="h-5 w-5 text-blue-600" />
                         </div>
-                        <h4 className="font-semibold text-slate-900">Presentation</h4>
+                        <h4 className="font-semibold text-slate-900">{data.presentationTitle}</h4>
                     </div>
                     <p className="text-sm text-slate-600 mb-3">{data.intro}</p>
                     <ul className="space-y-2">

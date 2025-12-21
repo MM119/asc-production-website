@@ -13,6 +13,7 @@ function getCategoryTheme(category = "") {
 }
 
 export default function InsightCard({ item, readMoreLabel, comingSoonLabel = "Coming soon" }) {
+    const BASE = import.meta.env.BASE_URL;
     const Icon = INSIGHT_ICONS[item.icon] || FileText;
     const theme = getCategoryTheme(item.category);
     const isComingSoon = Boolean(item.comingSoon);
@@ -23,10 +24,11 @@ export default function InsightCard({ item, readMoreLabel, comingSoonLabel = "Co
         ? { className: cardClasses, "aria-disabled": true }
         : { to: `/insights/${item.slug}`, className: cardClasses };
     const actionLabel = isComingSoon ? comingSoonLabel : readMoreLabel;
+    const imageSrc = item.image?.startsWith("/") ? `${BASE}${item.image.slice(1)}` : item.image;
     return (
         <Wrapper {...wrapperProps}>
             <div className="relative h-52 overflow-hidden">
-                <img src={item.image} alt={item.title} className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
+                <img src={imageSrc} alt={item.title} className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" loading="lazy" />
                 <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/10 transition-colors duration-500" />
                 <span className={`absolute top-4 left-4 text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full shadow-sm ${theme.tag}`}>{item.category}</span>
                 {isComingSoon && (

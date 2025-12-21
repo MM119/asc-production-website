@@ -5,6 +5,7 @@ import Activity from "lucide-react/dist/esm/icons/activity";
 import PieChart from "lucide-react/dist/esm/icons/pie-chart";
 
 export default function RiskVisual({ block }) {
+    const BASE = import.meta.env.BASE_URL;
     if (!block) return null;
 
     const points = block.points || [];
@@ -38,7 +39,7 @@ export default function RiskVisual({ block }) {
             <div className="relative rounded-2xl border border-slate-200 bg-white overflow-hidden shadow-2xl aspect-[4/3] group">
                 <div className="absolute inset-0 bg-slate-900/5 group-hover:bg-transparent transition-colors duration-500 z-10" />
                 <img
-                    src="/assets/others/boats_calm_water_2.png"
+                    src={`${BASE}assets/others/boats_calm_water_2.png`}
                     alt="Ships navigating calm waters"
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                     loading="lazy"

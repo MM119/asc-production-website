@@ -65,8 +65,8 @@ export default function AboutPage({ t }) {
                     <div className="mt-16 space-y-8">
                         <h3 className="text-2xl font-serif font-semibold text-slate-900">{t.about.teamTitle || "Leadership"}</h3>
                         <div className="space-y-6">
-                            {t.about.bioDetails.map((bio) => {
-                                const isFounder = bio.name.includes("Duc");
+                            {t.about.bioDetails.map((bio, idx) => {
+                                const isFounder = idx === 0;
                                 const photo = isFounder ? TEAM_PHOTOS.founder : TEAM_PHOTOS.cofounder;
                                 return (
                                     <TeamCard

@@ -7,12 +7,13 @@ import BookOpen from "lucide-react/dist/esm/icons/book-open";
 import { ICON_MAP } from "../data/content";
 
 export default function Hero({ t }) {
+    const BASE = import.meta.env.BASE_URL;
     return (
         <section className="relative overflow-hidden text-white bg-[#050c20]">
             <div
                 className="absolute inset-0"
                 style={{
-                    backgroundImage: "linear-gradient(120deg, rgba(5,10,25,0.92), rgba(5,10,25,0.75)), url(/assets/hero/hero-hcmc-dusk.png)",
+                    backgroundImage: `linear-gradient(120deg, rgba(5,10,25,0.92), rgba(5,10,25,0.75)), url(${BASE}assets/hero/hero-hcmc-dusk.png)`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}
@@ -73,9 +74,9 @@ export default function Hero({ t }) {
                         )}
                     </div>
                     <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md shadow-2xl">
-                        <h3 className="text-xs uppercase tracking-[0.3em] text-[#D4AF37] font-bold mb-6">Why ASC</h3>
+                        <h3 className="text-xs uppercase tracking-[0.3em] text-[#D4AF37] font-bold mb-6">{t.hero.whyAsc}</h3>
                         <p className="text-lg text-slate-100 font-light leading-relaxed mb-8">
-                            Disciplined, factor-based Vietnamese equity strategies implemented through licensed partners with explicit drawdown controls.
+                            {t.hero.subtitle.split('.')[0] || "Disciplined, factor-based Vietnamese equity strategies."}
                         </p>
                         <div className="space-y-6">
                             {t.hero.highlights.map((item) => {

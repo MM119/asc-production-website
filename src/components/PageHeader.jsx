@@ -2,12 +2,15 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export default function PageHeader({ title, subtitle, image, parentSection }) {
+    const BASE = import.meta.env.BASE_URL;
+    // Handle both absolute paths starting with / and already-processed paths
+    const imageSrc = image?.startsWith('/') ? `${BASE}${image.slice(1)}` : image;
     return (
-        <div className="relative h-[40vh] min-h-[400px] w-full overflow-hidden mb-16">
+        <div className="relative h-[40vh] min-h-[400px] w-full overflow-hidden mb-16 bg-slate-900">
             {/* Background Image */}
             <div className="absolute inset-0">
                 <img
-                    src={image}
+                    src={imageSrc}
                     alt={title}
                     className="h-full w-full object-cover"
                     loading="eager"

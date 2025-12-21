@@ -2,6 +2,12 @@ import React from "react";
 import { useParams, Navigate, Link } from "react-router-dom";
 import { INSIGHTS_CONTENT } from "../data/content";
 
+const prefixBase = (src) => {
+    if (!src) return src;
+    const BASE = import.meta.env.BASE_URL;
+    return src.startsWith("/") ? `${BASE}${src.slice(1)}` : src;
+};
+
 export default function InsightArticlePage({ lang, t }) {
     const { slug } = useParams();
     const article = INSIGHTS_CONTENT[slug]?.[lang];
@@ -24,7 +30,7 @@ export default function InsightArticlePage({ lang, t }) {
                 {heroImage && (
                     <figure className="pt-4 space-y-2">
                         <img
-                            src={heroImage.src}
+                            src={prefixBase(heroImage.src)}
                             alt={heroImage.alt || article.title}
                             className="w-full rounded-2xl border border-slate-200 shadow-sm"
                             loading="lazy"
@@ -42,7 +48,7 @@ export default function InsightArticlePage({ lang, t }) {
                         {gallery.map((image, idx) => (
                             <figure key={`${image.src}-${idx}`} className="space-y-2">
                                 <img
-                                    src={image.src}
+                                    src={prefixBase(image.src)}
                                     alt={image.alt || article.title}
                                     className="w-full rounded-2xl border border-slate-200 shadow-sm"
                                     loading="lazy"
@@ -53,7 +59,7 @@ export default function InsightArticlePage({ lang, t }) {
                     </div>
                 )}
                 <Link to="/insights" className="inline-flex items-center gap-2 text-sm text-slate-900 font-semibold">
-                    ← Back to insights
+                    ← {t.insights.backToInsights}
                 </Link>
             </div>
         </div>

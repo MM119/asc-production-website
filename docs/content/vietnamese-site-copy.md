@@ -8,7 +8,7 @@
 - **Secondary CTA:** Khám phá khung đầu tư (links to `/what-we-do`)
 - **Highlights:**
   1. **Kỷ luật hệ thống cấp tổ chức** – Quyết định dựa trên dữ liệu, nghiên cứu văn bản hóa và quy tắc lặp lại.
-  2. **Đầu tư nhân tố tại Việt Nam** – Danh mục nghiêng về các yếu tố giá trị, chất lượng và động lượng trong nhóm cổ phiếu thanh khoản.
+  2. **Đầu tư nhân tố tại Việt Nam** – Danh mục nghiêng về các nhân tố giá trị, chất lượng và động lượng trong nhóm cổ phiếu thanh khoản.
   3. **Khung kiểm soát drawdown rõ ràng** – Mục tiêu tăng trưởng dài hạn đi kèm với các quy tắc phòng vệ cho các giai đoạn căng thẳng.
 
 ---

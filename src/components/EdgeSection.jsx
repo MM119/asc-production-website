@@ -1,12 +1,13 @@
 import CheckCircle2 from "lucide-react/dist/esm/icons/check-circle-2";
 
 export default function EdgeSection({ data }) {
+    const BASE = import.meta.env.BASE_URL;
     return (
         <div className="relative rounded-2xl overflow-hidden p-8 md:p-10 group">
             {/* Background Image */}
             <div className="absolute inset-0">
                 <img
-                    src="/assets/others/hcmc_skyline_1.png"
+                    src={`${BASE}assets/others/hcmc_skyline_1.png`}
                     alt="Ho Chi Minh City Skyline"
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000"
                 />
