@@ -10,7 +10,12 @@ export default function InsightsPreview({ t }) {
                 <SectionTitle icon={FileText} title={t.insights.sectionTitle} subtitle={t.insights.intro} />
                 <div className="grid gap-6 md:grid-cols-3">
                     {t.insights.items.map((item) => (
-                        <InsightCard key={item.slug} item={item} readMoreLabel={t.insights.readMore} />
+                        <InsightCard
+                            key={item.slug}
+                            item={item}
+                            readMoreLabel={t.insights.readMore}
+                            comingSoonLabel={t.insights.comingSoonLabel}
+                        />
                     ))}
                 </div>
             </div>

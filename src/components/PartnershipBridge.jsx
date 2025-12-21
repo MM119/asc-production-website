@@ -18,7 +18,7 @@ export default function PartnershipBridge({ roles }) {
                         <React.Fragment key={node.title}>
                             <div className="flex-1 bg-slate-50 border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 group">
                                 <div className="flex items-center gap-4">
-                                    <div className="h-12 w-12 rounded-xl bg-slate-900/5 flex items-center justify-center text-slate-900 group-hover:bg-[#d6b16b] group-hover:text-white transition-colors duration-300">
+                                    <div className="h-12 w-12 rounded-xl bg-slate-900/5 flex items-center justify-center text-slate-900 group-hover:bg-[#D4AF37] group-hover:text-white transition-colors duration-300">
                                         <Icon className="h-6 w-6" />
                                     </div>
                                     <div>
@@ -32,12 +32,12 @@ export default function PartnershipBridge({ roles }) {
                             </div>
                             {idx < nodes.length - 1 && (
                                 <div className="hidden md:flex items-center justify-center px-4">
-                                    <ArrowRight className="h-6 w-6 text-[#d6b16b]" />
+                                    <ArrowRight className="h-6 w-6 text-[#D4AF37]" />
                                 </div>
                             )}
                             {idx < nodes.length - 1 && (
                                 <div className="md:hidden flex justify-center py-2">
-                                    <ArrowRight className="h-6 w-6 text-[#d6b16b] rotate-90" />
+                                    <ArrowRight className="h-6 w-6 text-[#D4AF37] rotate-90" />
                                 </div>
                             )}
                         </React.Fragment>

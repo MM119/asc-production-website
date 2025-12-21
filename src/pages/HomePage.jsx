@@ -15,7 +15,7 @@ export default function HomePage({ t }) {
             <section id="what-we-do" className="py-16 bg-white">
                 <div className="mx-auto max-w-6xl px-4 space-y-10">
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="w-16 h-1 bg-[#d6b16b] mx-auto mb-6" />
+                        <div className="w-16 h-1 bg-[#D4AF37] mx-auto mb-6" />
                         <h2 className="text-4xl md:text-5xl font-serif font-medium text-slate-900 mb-6 tracking-tight">
                             {t.whatWeDo.sectionTitle || t.nav.whatWeDo}
                         </h2>

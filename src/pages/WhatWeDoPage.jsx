@@ -34,10 +34,10 @@ export default function WhatWeDoPage({ t }) {
                             const icons = [Cpu, BarChart2, MapPin, ShieldCheck];
                             const Icon = icons[idx] || Cpu;
                             return (
-                                <div key={principle.label} className="border border-slate-200 rounded-xl bg-white p-6 shadow-sm hover:border-[#d6b16b] hover:shadow-md transition-all duration-300 group">
+                                <div key={principle.label} className="border border-slate-200 rounded-xl bg-white p-6 shadow-sm hover:border-[#D4AF37] hover:shadow-md transition-all duration-300 group">
                                     <div className="flex items-center justify-between mb-4">
-                                        <div className="text-xs uppercase tracking-wide text-slate-500 font-semibold group-hover:text-[#d6b16b] transition-colors">{principle.label}</div>
-                                        <Icon className="h-5 w-5 text-slate-400 group-hover:text-[#d6b16b] transition-colors" />
+                                        <div className="text-xs uppercase tracking-wide text-slate-500 font-semibold group-hover:text-[#D4AF37] transition-colors">{principle.label}</div>
+                                        <Icon className="h-5 w-5 text-slate-400 group-hover:text-[#D4AF37] transition-colors" />
                                     </div>
                                     <p className="text-sm text-slate-600 leading-relaxed">{principle.body}</p>
                                 </div>
@@ -51,8 +51,8 @@ export default function WhatWeDoPage({ t }) {
                         <SectionTitle icon={BookOpen} title={t.whatWeDo.processTitle || t.whatWeDo.sectionTitle} subtitle={t.whatWeDo.processIntro} />
                         <div className="grid gap-4 md:grid-cols-2">
                             {t.whatWeDo.process.map((step, idx) => (
-                                <div key={step.label} className="bg-slate-50 rounded-xl p-6 border border-slate-100 hover:border-[#d6b16b]/30 transition-colors">
-                                    <div className="text-xs font-bold text-[#d6b16b] uppercase tracking-wider mb-2">Step 0{idx + 1}</div>
+                                <div key={step.label} className="bg-slate-50 rounded-xl p-6 border border-slate-100 hover:border-[#D4AF37]/30 transition-colors">
+                                    <div className="text-xs font-bold text-[#D4AF37] uppercase tracking-wider mb-2">Step 0{idx + 1}</div>
                                     <div className="text-base font-serif font-semibold text-slate-900 mb-2">{step.label}</div>
                                     <p className="text-sm text-slate-600 leading-relaxed">{step.body}</p>
                                 </div>

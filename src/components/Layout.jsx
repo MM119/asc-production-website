@@ -18,13 +18,13 @@ export default function Layout({ t, lang, setLang, children }) {
                     </div>
                     <div className="flex items-center gap-1">
                         <button
-                            className={`px-2 py-1 rounded-md ${lang === "en" ? "bg-slate-800 text-white" : "hover:bg-slate-800"}`}
+                            className={`px-2 py-1 rounded-md cursor-pointer ${lang === "en" ? "bg-slate-800 text-white" : "hover:bg-slate-800"}`}
                             onClick={() => setLang("en")}
                         >
                             EN
                         </button>
                         <button
-                            className={`px-2 py-1 rounded-md ${lang === "vi" ? "bg-slate-800 text-white" : "hover:bg-slate-800"}`}
+                            className={`px-2 py-1 rounded-md cursor-pointer ${lang === "vi" ? "bg-slate-800 text-white" : "hover:bg-slate-800"}`}
                             onClick={() => setLang("vi")}
                         >
                             VI
@@ -77,14 +77,13 @@ export default function Layout({ t, lang, setLang, children }) {
                     <div className="space-y-4">
                         <p className="text-xs font-bold tracking-widest uppercase text-[#D4AF37]">Disclaimer</p>
                         <p className="text-slate-400 max-w-2xl">
-                            This site explains Aureus Sigma Capital’s research and systematic approach to Vietnamese equities. It is intended for informational use by professional or institutional investors and is not personal investment advice or a direct offer to manage your money. Our strategies are implemented through licensed investment managers, and investing in securities involves risk, including possible loss of capital and outcomes that may differ from past results.
+                            {t.legal.body}
                         </p>
                     </div>
                     <div className="space-y-4 text-sm">
                         <div className="font-serif text-xl text-slate-100 tracking-tight">Aureus Sigma Capital</div>
                         <div className="flex flex-col gap-2 text-slate-400">
-                            <a href="mailto:contact@aureussigmacapital.com" className="hover:text-[#D4AF37] transition-colors">contact@aureussigmacapital.com</a>
-                            <a href="mailto:contact@ascap.vn" className="hover:text-[#D4AF37] transition-colors">contact@ascap.vn</a>
+                            <a href={`mailto:${t.contact.email}`} className="hover:text-[#D4AF37] transition-colors">{t.contact.email}</a>
                             <span>{t.contact.note}</span>
                         </div>
                     </div>

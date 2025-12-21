@@ -1,13 +1,7 @@
-FIDES (Vietnam) Fund Management JSC and Aureus Sigma Capital have signed a memorandum of understanding to collaborate on the research and development of rules-based, systematic investment strategies for the Vietnamese equity market.
+On December 19, 2025, Fides (Vietnam) Fund Management JS Company ("FIDES Vietnam") and Aureus Sigma Capital JS Company ("ASC") signed a memorandum of understanding at the FIDES office in Ho Chi Minh City. The MoU establishes a framework for cooperation on investment mandate execution, product development, and research and analytics within the applicable regulatory framework.
 
-Under the collaboration, Aureus Sigma Capital provides quantitative research, portfolio design input, and model strategies. FIDES Vietnam independently evaluates, adapts, and implements these strategies within internal pilot portfolios. FIDES Vietnam retains full responsibility for all investment decisions, portfolio construction, risk management, and regulatory compliance.
+FIDES Vietnam is an asset management firm headquartered in Vietnam with core businesses in fund management, portfolio management, and securities investment advisory. It currently manages portfolios for institutional and individual clients and public funds investing in Vietnam’s capital markets.
 
-The joint work focuses on combining market data, company fundamentals, and predefined risk guardrails to support more consistent, evidence-based portfolio construction. The initial scope is limited to internal pilot portfolios used for testing and evaluation.
+ASC is a Vietnam-based systematic quantitative research firm focused on rules-based strategies for Vietnamese equities. ASC develops and backtests systematic frameworks and maintains model portfolios and investment rulebooks that combine market data, company information, and predefined risk limits to reduce short-term emotion and bias in investment decisions.
 
-"As the Vietnamese equity market continues to deepen, we see growing value in systematic, evidence-based investment processes. This collaboration allows us to explore how quantitative research and rules-based frameworks can complement our existing fundamental investment expertise."
-
-"Our work with FIDES Vietnam is about turning robust, data-driven research into practical, transparent investment processes that fit the realities of the local market. By starting with internal pilot portfolios, we can rigorously test and refine systematic strategies before any potential broader application."
-
-Initially, the collaboration concentrates on Vietnamese listed equities, with room over time to explore additional techniques or asset classes, subject to applicable regulations and FIDES Vietnam's independent assessment.
-
-Important Information: This announcement is for informational purposes only and does not constitute an offer or solicitation to buy or sell any security or investment product. No changes to existing FIDES Vietnam funds are being announced. ASC does not offer products directly to the public and does not handle client funds. Past performance is not indicative of future results.
+Under the cooperation framework, ASC provides research and portfolio-design support, while FIDES Vietnam retains sole discretion for investment decisions, portfolio implementation, risk management, and regulatory compliance.

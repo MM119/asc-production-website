@@ -14,7 +14,7 @@ export default function RiskVisual({ block }) {
         <div className="grid gap-10 lg:grid-cols-2 items-center">
             <div className="space-y-8">
                 <div>
-                    <div className="h-1 w-12 bg-[#d6b16b] mb-4"></div>
+                    <div className="h-1 w-12 bg-[#D4AF37] mb-4"></div>
                     <h3 className="text-3xl font-serif font-medium text-slate-900 mb-4">{block.title}</h3>
                     <p className="text-base text-slate-600 leading-relaxed">{block.intro || block.body}</p>
                 </div>
@@ -24,9 +24,9 @@ export default function RiskVisual({ block }) {
                         {points.map((point, idx) => {
                             const Icon = icons[idx] || Shield;
                             return (
-                                <div key={idx} className="flex gap-4 items-start p-4 rounded-xl bg-white border border-slate-100 shadow-sm hover:border-[#d6b16b]/30 hover:shadow-md transition-all duration-300">
+                                <div key={idx} className="flex gap-4 items-start p-4 rounded-xl bg-white border border-slate-100 shadow-sm hover:border-[#D4AF37]/30 hover:shadow-md transition-all duration-300">
                                     <div className="p-2 bg-[#f4f6f8] rounded-lg shrink-0">
-                                        <Icon className="h-5 w-5 text-[#d6b16b]" />
+                                        <Icon className="h-5 w-5 text-[#D4AF37]" />
                                     </div>
                                     <p className="text-sm text-slate-700 leading-relaxed pt-1">{point}</p>
                                 </div>

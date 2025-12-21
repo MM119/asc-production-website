@@ -6,13 +6,13 @@ export default function Expectations({ data }) {
         <div className="border border-slate-200 rounded-2xl bg-white p-8 space-y-6">
             <div>
                 <div className="flex items-center gap-2 mb-4">
-                    <Target className="h-5 w-5 text-[#d6b16b]" />
+                    <Target className="h-5 w-5 text-[#D4AF37]" />
                     <h4 className="text-lg font-serif font-semibold text-slate-900">{data.title}</h4>
                 </div>
                 <ul className="space-y-3">
                     {data.goals.map((goal) => (
                         <li key={goal} className="flex gap-3 text-sm text-slate-600">
-                            <span className="h-1.5 w-1.5 rounded-full bg-[#d6b16b] mt-2 shrink-0" />
+                            <span className="h-1.5 w-1.5 rounded-full bg-[#D4AF37] mt-2 shrink-0" />
                             <span className="leading-relaxed">{goal}</span>
                         </li>
                     ))}

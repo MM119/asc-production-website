@@ -11,12 +11,12 @@ export default function AboutPage({ t }) {
     const highlights = [
         { label: "Systematic discipline", body: "Rules-based research and governance tailored to Vietnam.", icon: BookOpen },
         { label: "Vietnam focus", body: "Dedicated to listed Vietnamese equities and local data.", icon: MapPin },
-        { label: "Licensed partners", body: "Implemented via regulated managers such as FIDES.", icon: ShieldCheck },
+        { label: "Licensed partners", body: "Implemented via ASC’s licensed partners.", icon: ShieldCheck },
     ];
     const factSheet = [
         { label: "Founded", value: "2025" },
         { label: "Strategy", value: "Factor-based Vietnamese equities" },
-        { label: "Implementation", value: "Via licensed managers (e.g., FIDES)" },
+        { label: "Implementation", value: "Via ASC’s licensed partners" },
     ];
     return (
         <div className="bg-white">
@@ -37,7 +37,7 @@ export default function AboutPage({ t }) {
                                     </p>
                                 ))}
                         </div>
-                        <div className="bg-white rounded-2xl p-6 shadow-sm border-t-4 border-[#d6b16b] border-x border-b border-slate-100">
+                        <div className="bg-white rounded-2xl p-6 shadow-sm border-t-4 border-[#D4AF37] border-x border-b border-slate-100">
                             <h3 className="text-sm font-semibold text-slate-900 uppercase tracking-[0.2em] mb-6">Fact sheet</h3>
                             <dl className="space-y-4 text-sm">
                                 {factSheet.map((item) => (
@@ -51,10 +51,10 @@ export default function AboutPage({ t }) {
                     </div>
                     <div className="grid gap-4 md:grid-cols-3">
                         {highlights.map((item, idx) => (
-                            <div key={item.label} className="border border-slate-200 rounded-lg bg-white p-5 hover:border-[#d6b16b]/50 transition-colors duration-300 group">
+                            <div key={item.label} className="border border-slate-200 rounded-lg bg-white p-5 hover:border-[#D4AF37]/50 transition-colors duration-300 group">
                                 <div className="flex items-center justify-between mb-3">
                                     <div className="text-xs uppercase tracking-wide text-[#b78b45] font-bold">0{idx + 1}</div>
-                                    <item.icon className="h-5 w-5 text-slate-400 group-hover:text-[#d6b16b] transition-colors" />
+                                    <item.icon className="h-5 w-5 text-slate-400 group-hover:text-[#D4AF37] transition-colors" />
                                 </div>
                                 <div className="text-base font-serif font-semibold text-slate-900">{item.label}</div>
                                 <p className="mt-1 text-sm text-slate-600 leading-relaxed">{item.body}</p>

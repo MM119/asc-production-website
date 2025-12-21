@@ -10,4 +10,4 @@ Under the partnership, ASC provides its rulebook, research updates, and risk ove
 
 Over time the firms plan to expand the range of systematic approaches in Vietnam while holding to one principle: transparent rules and risk management first.
 
-Important information: This announcement is informational only and not an offer or solicitation. Products that employ ASC’s strategies, if any, are offered solely by FIDES or other licensed managers to eligible investors under applicable laws. Past performance (actual or simulated) is not indicative of future results.
+Important information: This announcement is for informational purposes only and does not constitute an offer to sell, or a solicitation of an offer to buy, any security or investment product in any jurisdiction. Strategies and investment frameworks developed by Aureus Sigma Capital (ASC) are implemented by ASC’s licensed partners for eligible investors under applicable regulation. Investors interested in accessing ASC’s framework should work with ASC’s licensed partners.

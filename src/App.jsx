@@ -11,7 +11,6 @@ import InsightArticlePage from "./pages/InsightArticlePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
-import TearsheetPage from "./pages/TearsheetPage";
 
 export default function App() {
   const [lang, setLang] = useState("en");
@@ -29,7 +28,6 @@ export default function App() {
           <Route path="/insights/:slug" element={<InsightArticlePage lang={lang} t={t} />} />
           <Route path="/about" element={<AboutPage t={t} />} />
           <Route path="/contact" element={<ContactPage t={t} lang={lang} />} />
-          <Route path="/tearsheet" element={<TearsheetPage t={t} />} />
           <Route path="*" element={<NotFoundPage lang={lang} />} />
         </Routes>
       </Layout>

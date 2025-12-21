@@ -8,7 +8,7 @@ export default function PerformanceSection({ data }) {
     return (
         <div className="space-y-8">
             <div className="flex items-center gap-3 mb-6">
-                <div className="h-8 w-1 bg-[#d6b16b] rounded-full"></div>
+                <div className="h-8 w-1 bg-[#D4AF37] rounded-full"></div>
                 <h3 className="text-2xl font-serif font-semibold text-slate-900">{data.title}</h3>
             </div>
 

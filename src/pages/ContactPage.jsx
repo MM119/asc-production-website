@@ -44,7 +44,13 @@ export default function ContactPage({ t, lang }) {
                             : "Cảm ơn bạn. Chúng tôi sẽ phản hồi sớm."}
                     </div>
                 )}
-                <p className="mt-6 text-sm text-slate-600">{t.contact.note}</p>
+                <div className="mt-6 text-sm text-slate-600">
+                    <span className="font-semibold text-slate-700">{t.contact.emailLabel}:</span>{" "}
+                    <a href={`mailto:${t.contact.email}`} className="hover:text-[#D4AF37] transition-colors">
+                        {t.contact.email}
+                    </a>
+                </div>
+                <p className="mt-2 text-sm text-slate-600">{t.contact.note}</p>
             </div>
         </div>
     );

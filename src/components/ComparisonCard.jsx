@@ -19,10 +19,10 @@ export default function ComparisonCard({ comparison }) {
             </div>
 
             {/* Rules-Based - Gold/Premium */}
-            <div className="rounded-xl border border-[#d6b16b]/30 bg-white p-6 shadow-premium relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-1 h-full bg-[#d6b16b]" />
+            <div className="rounded-xl border border-[#D4AF37]/30 bg-white p-6 shadow-premium relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-1 h-full bg-[#D4AF37]" />
                 <div className="flex items-start gap-4">
-                    <div className="h-10 w-10 rounded-full bg-[#d6b16b]/10 text-[#b78b45] flex items-center justify-center shrink-0">
+                    <div className="h-10 w-10 rounded-full bg-[#D4AF37]/10 text-[#b78b45] flex items-center justify-center shrink-0">
                         <Compass className="h-5 w-5" />
                     </div>
                     <div>

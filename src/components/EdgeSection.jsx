@@ -19,7 +19,7 @@ export default function EdgeSection({ data }) {
                 <div className="grid gap-6 md:grid-cols-2">
                     {data.bullets.map((item) => (
                         <div key={item} className="flex gap-4 items-start">
-                            <CheckCircle2 className="h-5 w-5 text-[#d6b16b] shrink-0 mt-1" />
+                            <CheckCircle2 className="h-5 w-5 text-[#D4AF37] shrink-0 mt-1" />
                             <p className="text-base text-slate-200 leading-relaxed font-light">{item}</p>
                         </div>
                     ))}

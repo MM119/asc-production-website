@@ -57,7 +57,7 @@ const MetricCard = ({ label, value, subtext, icon: Icon }) => (
     <div className="bg-slate-50 p-4 rounded-lg border border-slate-200">
         <div className="flex items-center justify-between mb-2">
             <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">{label}</span>
-            {Icon && <Icon className="h-4 w-4 text-[#d6b16b]" />}
+            {Icon && <Icon className="h-4 w-4 text-[#D4AF37]" />}
         </div>
         <div className="text-2xl font-serif font-medium text-slate-900">{value}</div>
         {subtext && <div className="text-xs text-slate-500 mt-1">{subtext}</div>}
@@ -85,14 +85,14 @@ export default function TearsheetPage() {
             <div className="mx-auto bg-white shadow-2xl print:shadow-none w-[210mm] min-h-[297mm] p-[15mm] relative">
 
                 {/* Header */}
-                <header className="border-b-2 border-[#d6b16b] pb-6 mb-8 flex justify-between items-end">
+                <header className="border-b-2 border-[#D4AF37] pb-6 mb-8 flex justify-between items-end">
                     <div>
                         <h1 className="text-3xl font-serif font-bold text-slate-900 mb-1">ASC Global Alpha Strategy</h1>
                         <p className="text-slate-500 text-sm">Monthly Performance Report • October 2025</p>
                     </div>
                     <div className="text-right">
                         <div className="text-2xl font-bold text-slate-900 tracking-tight">AUREUS SIGMA</div>
-                        <div className="text-xs text-[#d6b16b] font-medium tracking-widest uppercase">Capital</div>
+                        <div className="text-xs text-[#D4AF37] font-medium tracking-widest uppercase">Capital</div>
                     </div>
                 </header>
 

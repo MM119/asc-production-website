@@ -1,6 +1,6 @@
-# Aureus Sigma Capital Website
+# ASC Website Mockup (Vite + React)
 
-This is the Vite project for the Aureus Sigma Capital website.
+This is a minimal Vite project to preview the Aureus Sigma Capital mockup locally.
 
 ## Quick start
 ```bash

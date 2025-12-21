@@ -3,8 +3,8 @@
 ## 1. Hero
 
 - **Headline:** Systematic Alpha in Vietnam
-- **Subheadline:** Aureus Sigma Capital (ASC) designs transparent, factor-based portfolios in Vietnam’s equity market, targeting attractive long-term, double-digit annual returns with explicit drawdown controls. Through regulated managers such as FIDES, institutional and professional investors can access these rules-based strategies within compliant mandates and products.
-- **Primary CTA:** Learn how ASC works with FIDES (links to `/partnerships`)
+- **Subheadline:** Aureus Sigma Capital (ASC) designs transparent, factor-based portfolios in Vietnam’s equity market, seeking attractive long-term, risk-adjusted returns with explicit drawdown controls. Through ASC’s licensed partners, institutional and professional investors can access these rules-based strategies within compliant mandates and products.
+- **Primary CTA:** Learn about ASC’s licensed partners (links to `/partnerships`)
 - **Secondary CTA:** Explore our investment framework (links to `/what-we-do`)
 - **Highlights:**
   1. **Institutional systematic discipline** – Decisions are grounded in data, documented research and a repeatable process, not short-term opinion.
@@ -19,7 +19,7 @@ Aureus Sigma Capital (ASC) is an independent, founder-owned quantitative investm
 
 Our role is to build the investment engine behind Vietnamese equity portfolios. We clean and organise market and company data, codify value, quality and momentum insights, and express them as rules that determine what to own, how much to own and when to adjust. Every holding in the portfolio can be traced back to this documented framework.
 
-ASC does not manage client accounts or distribute products directly. Our strategies are implemented exclusively by licensed investment managers such as FIDES, which handle client onboarding, suitability, execution and reporting. This separation keeps incentives aligned, allows clients to work with regulated counterparties, and enables ASC to focus on research, portfolio design and risk analytics, alongside investing the firm’s own capital in the same strategies.
+ASC does not manage client accounts or distribute products directly. Our strategies are implemented exclusively by ASC’s licensed partners, which handle client onboarding, suitability, execution and reporting. This separation keeps incentives aligned, allows clients to work with regulated counterparties, and enables ASC to focus on research, portfolio design and risk analytics, alongside investing the firm’s own capital in the same strategies.
 
 ### 2.1 Leadership bios
 
@@ -54,7 +54,7 @@ Our philosophy is that investors are better served by an approach that is:
 - **Local by design** – built on Vietnamese data, liquidity and regulation, not imported blindly from other markets.
 - **Risk-aware** – explicitly designed around drawdowns, liquidity and investor behaviour, not only headline returns.
 
-The objective is clear: deliver attractive long-term, risk-adjusted returns from Vietnamese equities with a path that institutional allocators can understand, monitor and challenge.
+The objective is clear: seek to deliver attractive long-term, risk-adjusted returns from Vietnamese equities with a path that institutional allocators can understand, monitor and challenge.
 
 ### 3.2 From philosophy to framework
 
@@ -133,7 +133,7 @@ Several features of ASC’s approach are particularly relevant in the Vietnamese
 
 Over a full market cycle, our goal is to:
 
-- deliver higher risk-adjusted returns than a simple “buy-the-index” approach,
+- aim to deliver higher risk-adjusted returns than a simple “buy-the-index” approach,
 - limit the depth and duration of major drawdowns relative to the broad market, and
 - maintain a process that investors can understand, monitor and challenge.
 
@@ -169,17 +169,17 @@ Backtests are tools, not promises. They help us and our investors understand the
 
 ### 5.3 Access to detailed reporting
 
-For institutional and professional investors, our partners can provide detailed reports and data files on request, including performance, risk and attribution, subject to product-level terms. We work with licensed managers such as FIDES to align reporting with each client’s governance and oversight requirements.
+For institutional and professional investors, our partners can provide detailed reports and data files on request, including performance, risk and attribution, subject to product-level terms. We work with ASC’s licensed partners to align reporting with each client’s governance and oversight requirements.
 
 ---
 
-## 5. Partnerships – FIDES × Aureus Sigma Capital
+## 5. Partnerships – ASC & Licensed Partners
 
 ## 6. Client Solutions
 
 ### 6.1 Solutions by client objective
 
-ASC’s framework can support a range of mandates run by licensed managers such as FIDES. Rather than leading with products, we help structure solutions around specific objectives:
+ASC’s framework can support a range of mandates run by ASC’s licensed partners. Rather than leading with products, we help structure solutions around specific objectives:
 
 - **Corporate treasuries** – For balance sheets seeking equity exposure with controlled downside risk, our quality-momentum strategies aim to participate in Vietnam’s growth while limiting deep, prolonged drawdowns relative to the market.
 - **Pension funds and insurance portfolios** – For long-horizon capital, our diversified, factor-tilted portfolios provide systematic exposure to Vietnamese equities that can be analysed using familiar risk and factor metrics.
@@ -202,19 +202,19 @@ Institutional clients typically receive regular reporting, including performance
 
 ### 5.1 Overview
 
-ASC’s strategies are accessed through regulated investment products and mandates run by licensed managers such as FIDES. ASC designs and maintains the systematic framework; FIDES and similar partners handle client onboarding, suitability, execution and regulatory reporting.
+ASC’s strategies are accessed through regulated investment products and mandates run by ASC’s licensed partners. ASC designs and maintains the systematic framework; licensed partners handle client onboarding, suitability, execution and regulatory reporting.
 
-Together, FIDES and ASC offer eligible investors a disciplined way to access Vietnamese equities through factor-driven, rules-based strategies implemented within a regulated structure.
+Together, ASC and its licensed partners offer eligible investors a disciplined way to access Vietnamese equities through factor-driven, rules-based strategies implemented within a regulated structure.
 
-### 5.2 FIDES – the licensed investment manager
+### 5.2 Licensed partners – regulated investment managers
 
-FIDES is a licensed investment manager with Korean roots operating in Vietnam. It is responsible for:
+ASC’s licensed partners are regulated investment managers responsible for:
 
 - providing regulated investment products and bespoke mandates under its licences;
 - onboarding clients and managing ongoing relationships; and
 - implementing portfolios and reporting in line with Vietnamese regulation.
 
-Clients contract directly with FIDES or another licensed manager. That entity is responsible for ensuring that each product or mandate is suitable for the investor and compliant with local requirements.
+Clients contract directly with the relevant licensed partner. That entity is responsible for ensuring that each product or mandate is suitable for the investor and compliant with local requirements.
 
 ### 5.3 ASC – the quantitative research partner
 
@@ -224,24 +224,24 @@ Aureus Sigma Capital is an independent, founder-owned quantitative firm focused 
 - provide research updates, portfolio construction rules and risk analytics; and
 - invest our own capital alongside investors who access the strategies through licensed partners.
 
-ASC does not manage client accounts or distribute products. Implementation is carried out exclusively by licensed managers.
+ASC does not manage client accounts or distribute products. Implementation is carried out exclusively by licensed partners.
 
 ### 5.4 How the partnership operates
 
-Under the memorandum of understanding between FIDES and ASC, responsibilities are clearly defined:
+Under each partnership arrangement, responsibilities are clearly defined:
 
 - **ASC** develops and maintains the systematic investment framework, supplies research updates and diagnostics, and monitors how portfolios behave relative to expectations.
-- **FIDES** decides how and where to deploy ASC’s strategies, manages day-to-day portfolios under its licences (including execution and cash management), and provides regulated reporting and client service.
+- **Licensed partners** decide how and where to deploy ASC’s strategies, manage day-to-day portfolios under their licences (including execution and cash management), and provide regulated reporting and client service.
 
 This separation between research and implementation clarifies who is responsible for strategy design, portfolio management and regulatory compliance, and supports institutional governance standards.
 
 ### 5.5 Looking ahead
 
-As Vietnam’s capital markets deepen and investor requirements evolve, FIDES and ASC intend to broaden the range of mandates and products that can incorporate ASC’s framework, while maintaining a disciplined focus on research quality, risk control and regulatory robustness.
+As Vietnam’s capital markets deepen and investor requirements evolve, ASC and its licensed partners intend to broaden the range of mandates and products that can incorporate ASC’s framework, while maintaining a disciplined focus on research quality, risk control and regulatory robustness.
 
 ### 5.6 Call to action
 
-For investors interested in accessing ASC’s strategies, please contact FIDES or another relevant licensed manager directly, or reach out to ASC for an introduction and further information on how the framework is applied in practice.
+For investors interested in accessing ASC’s strategies, please contact an ASC licensed partner directly, or reach out to ASC for an introduction and further information on how the framework is applied in practice.
 
 ---
 
@@ -257,22 +257,24 @@ We publish concise notes for investors who want to understand how we think about
 
 ### 6.3 Cards (titles and summaries)
 
-1. **Staying Disciplined in a Noisy Market**  
-   Vietnam’s equity market is fast-moving and often emotional. This article explains how ASC anchors decisions in a clear, rules-based discipline so that day-to-day noise does not dictate long-term outcomes. It is designed for investors who want exposure to Vietnam without reacting to every short-term move.
+1. **FIDES and Aureus Sigma Capital Sign Memorandum of Understanding (MOU)**  
+   FIDES Vietnam and ASC signed an MOU in Ho Chi Minh City on December 19, 2025 to cooperate on investment mandate execution, product development, and research/analytics within applicable regulation.
 
-2. **How We Try to Limit Big Losses When Markets Fall**  
-   Large drawdowns can damage compounding, behaviour and opportunity. Here we outline how ASC builds diversification, quality and liquidity into portfolios, defines drawdown ranges and response plans in advance, and uses evidence from stress periods to refine the framework over time.
+2. **The Case for Systematic Factors in Vietnamese Equities**  
+   Vietnam’s equity market exhibits distinct microstructural inefficiencies. We discuss why a systematic, factor-based approach can help support more consistent decision-making than discretionary trading.
 
-3. **Our Partnership with FIDES**  
-   A closer look at how a licensed Korean-rooted investment manager in Vietnam and an independent quantitative research firm work together to deliver systematic equity strategies within a regulated framework for eligible investors.
+3. **Drawdown Management Framework: A Systematic Approach**  
+   Preserving capital during tail events is critical to long-term compounding. We outline our multi-layered defense mechanism, incorporating volatility targeting and regime-based allocation adjustments.
 
 ---
 
 ## 7. Contact CTA Copy
 
-> For institutional or professional inquiries, or to discuss how ASC’s systematic Vietnamese equity strategies can be accessed via licensed partners such as FIDES, please use the form below.
+> For institutional or professional inquiries, or to discuss how ASC’s systematic Vietnamese equity strategies can be accessed via ASC’s licensed partners, please use the form below.
 >
-> For information about specific products, account types and documentation, please contact FIDES (for example via its official website) or another relevant licensed investment manager in your jurisdiction.
+> Email: contact@ascap.vn
+>
+> For information about products, account types and documentation, please contact ASC.
 
 - **Button label:** “Submit inquiry”  
 - **Success message:** “Thank you for your inquiry. We will review your message and respond via email.”
@@ -284,13 +286,8 @@ We publish concise notes for investors who want to understand how we think about
 > **Important Information**  
 > This website is for informational purposes only. It does not constitute an offer to sell, or a solicitation of an offer to buy, any security or investment product in any jurisdiction.
 >
-> Strategies and investment frameworks developed by Aureus Sigma Capital (ASC) are implemented exclusively by licensed investment managers such as FIDES for eligible investors under applicable regulation. ASC does not directly solicit or accept capital from retail investors and does not provide personalised investment advice.
+> Strategies and investment frameworks developed by Aureus Sigma Capital (ASC) are implemented by ASC’s licensed partners for eligible investors under applicable regulation.
 >
-> Any references to our investment approach, portfolio construction, risk management or potential advantages describe objectives and design features only. They do not guarantee future results or performance. Investing in equities, including in emerging markets such as Vietnam, involves risk, including the possible loss of principal.
->
-> Past performance, whether actual or simulated, is not a reliable indicator of future results. Before making any investment decision, investors should consider their own circumstances and, where appropriate, consult with professional advisers.
->
-> For information about specific products or mandates that use ASC’s framework, including fees, risks and eligibility criteria, please contact FIDES or another relevant licensed investment manager.
 
 ---
 

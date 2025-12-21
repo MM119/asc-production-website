@@ -87,8 +87,4 @@ FIDES and ASC intend to respond to these trends by expanding the range of mandat
 
 ## 7. Important information
 
-This document is for informational purposes only. It does not constitute investment advice or a recommendation to buy or sell any security, nor does it constitute an offer to provide investment management services in any jurisdiction.
-
-Any reference to strategies or products is general in nature and does not take into account the objectives, financial situation or needs of any particular investor. Investors should consult with their own professional advisers before making any investment decision.
-
-Implementation of ASC’s strategies is carried out exclusively by licensed investment managers such as FIDES for eligible investors under applicable regulation. Details of specific products, including investment objectives, risks, fees and eligibility criteria, are available from FIDES or other relevant licensed managers.
+This document is for informational purposes only. It does not constitute an offer to sell, or a solicitation of an offer to buy, any security or investment product in any jurisdiction. Strategies and investment frameworks developed by Aureus Sigma Capital (ASC) are implemented by ASC’s licensed partners for eligible investors under applicable regulation. Investors interested in accessing ASC’s framework should work with ASC’s licensed partners.

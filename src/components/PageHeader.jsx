@@ -24,9 +24,9 @@ export default function PageHeader({ title, subtitle, image, parentSection }) {
                     className="max-w-3xl space-y-6"
                 >
                     {parentSection && (
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#d6b16b]/10 border border-[#d6b16b]/20 backdrop-blur-sm">
-                            <span className="h-1.5 w-1.5 rounded-full bg-[#d6b16b]"></span>
-                            <span className="text-[10px] uppercase tracking-[0.2em] text-[#d6b16b] font-bold">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D4AF37]/10 border border-[#D4AF37]/20 backdrop-blur-sm">
+                            <span className="h-1.5 w-1.5 rounded-full bg-[#D4AF37]"></span>
+                            <span className="text-[10px] uppercase tracking-[0.2em] text-[#D4AF37] font-bold">
                                 {parentSection}
                             </span>
                         </div>
