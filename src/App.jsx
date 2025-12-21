@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { i18n } from "./data/content";
 import Layout from "./components/Layout";
@@ -13,8 +13,27 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
+// Get initial language from localStorage, defaulting to 'en'
+const getInitialLang = () => {
+  try {
+    const stored = localStorage.getItem("asc-lang");
+    return stored === "vi" ? "vi" : "en";
+  } catch {
+    return "en";
+  }
+};
+
 export default function App() {
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState(getInitialLang);
+
+  // Persist language to localStorage whenever it changes
+  useEffect(() => {
+    try {
+      localStorage.setItem("asc-lang", lang);
+    } catch {
+      // localStorage not available
+    }
+  }, [lang]);
   const t = useMemo(() => i18n[lang], [lang]);
 
   return (
