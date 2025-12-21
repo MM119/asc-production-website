@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { i18n } from "./data/content";
 import Layout from "./components/Layout";
+import ScrollToTop from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import WhatWeDoPage from "./pages/WhatWeDoPage";
 import SolutionsPage from "./pages/SolutionsPage";
@@ -18,6 +19,7 @@ export default function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Layout t={t} lang={lang} setLang={setLang}>
         <Routes>
           <Route path="/" element={<HomePage t={t} />} />
