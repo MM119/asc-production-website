@@ -40,6 +40,19 @@
 
 <body class="min-h-screen">
   <div id="root"></div>
+  <script>
+    // GitHub Pages SPA redirect handler
+    // Processes redirect path from 404.html
+    (function () {
+      var redirectPath = sessionStorage.getItem('redirectPath');
+      if (redirectPath) {
+        sessionStorage.removeItem('redirectPath');
+        if (redirectPath !== '/' && redirectPath !== window.location.pathname) {
+          window.history.replaceState(null, '', redirectPath);
+        }
+      }
+    })();
+  </script>
 </body>
 
 </html>
