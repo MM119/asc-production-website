@@ -12,12 +12,28 @@ export default function ContactPage({ t, lang }) {
         setStatus("loading");
         setErrorMessage("");
 
-        const formData = new FormData(e.target);
+        const form = e.target;
+        const data = {
+            access_key: "03fdcd58-65b8-468c-a6a2-68f54c7b0da0",
+            subject: "New Inquiry from ASC Website",
+            from_name: "ASC Website Contact Form",
+            name: form.name.value,
+            email: form.email.value,
+            organization: form.organization.value,
+            message: form.message.value,
+            investor_confirmation: form.investor_confirmation.checked
+                ? "Confirmed - Institutional/Professional Investor"
+                : "Not confirmed",
+        };
 
         try {
             const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
-                body: formData,
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json",
+                },
+                body: JSON.stringify(data),
             });
 
             const result = await response.json();
@@ -54,13 +70,6 @@ export default function ContactPage({ t, lang }) {
                         className="border border-slate-200 rounded-xl bg-white p-6 space-y-4 shadow-sm"
                         onSubmit={handleSubmit}
                     >
-                        {/* Web3Forms Access Key */}
-                        <input type="hidden" name="access_key" value="03fdcd58-65b8-468c-a6a2-68f54c7b0da0" />
-                        {/* Form subject line for email */}
-                        <input type="hidden" name="subject" value="New Inquiry from ASC Website" />
-                        {/* Redirect URL (optional - we handle it with React state) */}
-                        <input type="hidden" name="from_name" value="ASC Website Contact Form" />
-
                         <div className="flex items-center gap-2 text-slate-800">
                             <Mail className="h-5 w-5" />
                             <span className="text-sm font-semibold">{t.contact.title}</span>
