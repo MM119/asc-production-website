@@ -15,7 +15,13 @@ description: Configure custom domain and DNS for live deployment
 
 ### Step 5.2: Configure DNS Records (MANUAL)
 
-Log into your domain registrar (e.g., GoDaddy, Namecheap, Cloudflare) and add these DNS records:
+Log into your DNS provider and add the records below.
+
+> [!IMPORTANT]
+> **Cloudflare vs GoDaddy:** If you bought your domain on GoDaddy but use Cloudflare to manage it (via nameservers), you must make these changes in the **Cloudflare Dashboard**, not GoDaddy.
+
+> [!TIP]
+> **Cloudflare Proxy Settings:** Set the Proxy Status to **"DNS Only" (Grey Cloud)** for the initial setup. GitHub needs to verify the domain to issue an SSL certificate. You can switch to "Proxied" (Orange Cloud) later once the site is live and HTTPS is enforced.
 
 #### For Apex Domain (aureussigmacapital.com):
 
