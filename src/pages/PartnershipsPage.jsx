@@ -34,7 +34,7 @@ export default function PartnershipsPage({ t }) {
                 {/* Key Mechanics / Text Content */}
                 <div className="grid gap-12 md:grid-cols-2 items-start">
                     <div className="space-y-6">
-                        <h3 className="text-2xl font-serif font-medium text-slate-900">How the partnership works</h3>
+                        <h3 className="text-2xl font-serif font-medium text-slate-900">{t.partnerships.mechanicsTitle}</h3>
                         <div className="space-y-4 text-slate-700 leading-relaxed">
                             <p>{t.partnerships.paragraphs[0]}</p>
                             <p>{t.partnerships.paragraphs[2]}</p>
@@ -42,7 +42,7 @@ export default function PartnershipsPage({ t }) {
                         </div>
                     </div>
                     <div className="bg-slate-50 rounded-2xl p-8 border border-slate-200">
-                        <h4 className="text-lg font-semibold text-slate-900 mb-4">Important for Investors</h4>
+                        <h4 className="text-lg font-semibold text-slate-900 mb-4">{t.partnerships.investorNoticeTitle}</h4>
                         <ul className="space-y-4">
                             <li className="flex gap-3 items-start">
                                 <div className="h-1.5 w-1.5 rounded-full bg-[#D4AF37] mt-2 shrink-0" />
@@ -76,7 +76,7 @@ export default function PartnershipsPage({ t }) {
                         <div key={role.title} className="relative bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 group overflow-hidden">
                             <div className="absolute top-0 left-0 w-full h-1 bg-slate-200 group-hover:bg-[#D4AF37] transition-colors duration-300" />
                             <div className="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-3">
-                                {idx === 0 ? "The Capital" : idx === 1 ? "The Manager" : "The Architect"}
+                                {role.roleLabel}
                             </div>
                             <h4 className="text-xl font-serif font-medium text-slate-900 mb-4">{role.title}</h4>
                             <ul className="space-y-3">

@@ -246,19 +246,24 @@ export const i18n = {
             ],
             roles: [
                 {
+                    roleLabel: "The Capital",
                     title: "Investors",
                     bullets: ["Eligible local or cross-border investors", "Access regulated products via ASC’s licensed partners"],
                 },
                 {
+                    roleLabel: "The Manager",
                     title: "Licensed partners",
                     bullets: ["Licensed managers under local regulation", "Client onboarding and servicing", "Portfolio implementation & reporting"],
                 },
                 {
+                    roleLabel: "The Architect",
                     title: "Aureus Sigma Capital",
                     bullets: ["Designs rules-based strategies", "Provides research & risk inputs", "Monitors discipline against documented guardrails"],
                 },
             ],
             cta: "View licensed partners",
+            mechanicsTitle: "How the partnership works",
+            investorNoticeTitle: "Important for Investors",
         },
         clientSolutions: {
             title: "Client Solutions",
@@ -341,9 +346,22 @@ export const i18n = {
             title: "About Aureus Sigma Capital",
             intro: "Independent. Systematic. Dedicated to Vietnam.",
             details: [
-                "Aureus Sigma Capital (ASC) is an independent, founder-owned quantitative investment firm dedicated to Vietnam’s listed equities. We design and maintain systematic, factor-based strategies that apply global institutional standards to local data, trading, and regulation.",
-                "Our role is to build the investment engine behind Vietnamese equity portfolios. We clean and organise market and company data, codify value, quality, and momentum insights, and express them as rules that determine what to own, how much to own, and when to adjust. Every holding in the portfolio can be traced back to this documented framework.",
-                "ASC does not manage client accounts or distribute products directly. Our strategies are implemented exclusively by ASC’s licensed partners, which handle client onboarding, suitability, execution, and reporting. This separation keeps incentives aligned, lets clients work with regulated counterparties, and enables ASC to focus on research, portfolio design, and risk analytics while investing the firm’s own capital in the same strategies.",
+                "Aureus Sigma Capital (ASC) is an independent, founder-owned quantitative investment firm specializing in Vietnam’s listed equity market. We design and operate systematic, factor-based investment strategies, applying international asset management standards to the local data, trading, and legal context.",
+                "ASC’s role is to build the investment engine for Vietnamese equity portfolios. We collect, clean, and organize market and corporate data; systematize signals on valuation, quality, and price trends; and then transform them into clear rules — determining which stocks to hold, at what weights, and when to adjust. Every investment in the portfolio can be traced back to this methodological framework.",
+                "ASC does not directly manage client accounts or distribute investment products. Our strategies are implemented through licensed partners responsible for client onboarding, suitability assessment, trade execution, and reporting. This segregated model ensures that the interests of all parties are aligned, clients are served by entities with full legal standing, while ASC focuses entirely on research, portfolio design, and risk analysis — while investing the firm’s own capital according to the same strategy.",
+            ],
+            factSheet: {
+                title: "Fact Sheet",
+                items: [
+                    { label: "Founded", value: "2025" },
+                    { label: "Strategy", value: "Quantitative multi-factor Vietnamese equities" },
+                    { label: "Implementation", value: "Via ASC’s licensed partners" },
+                ]
+            },
+            highlights: [
+                { label: "Systematic discipline", body: "Rules-based research and governance tailored to Vietnam.", icon: "rules" },
+                { label: "Vietnam focus", body: "Dedicated to listed Vietnamese equities and local data.", icon: "map" },
+                { label: "Licensed partners", body: "Implemented via ASC’s licensed partners.", icon: "shield-check" },
             ],
             bioDetails: [
                 {
@@ -425,9 +443,25 @@ export const i18n = {
             ],
         },
         whatWeDo: {
-            sectionTitle: "Tại sao cách tiếp cận có cấu trúc quan trọng tại Việt Nam",
+            sectionTitle: "Vì sao phương pháp có hệ thống lại quan trọng tại Việt Nam",
             intro:
-                "Thị trường chứng khoán Việt Nam biến động nhanh và thường bị chi phối bởi tâm lý. Giá có thể di chuyển mạnh theo tin tức, dòng tiền hoặc kỳ vọng chính sách. Triết lý của chúng tôi là nhà đầu tư sẽ được phục vụ tốt hơn bởi các chiến lược dựa trên quy tắc (rules-based), thúc đẩy bởi nhân tố, được xây dựng trên dữ liệu địa phương và nhận thức rõ ràng về drawdown.",
+                "Thị trường cổ phiếu Việt Nam biến động nhanh và thường bị chi phối bởi cảm xúc. Giá có thể dao động mạnh theo tin tức, dòng tiền hay kỳ vọng chính sách. Chúng tôi tin rằng các chiến lược dựa trên quy tắc, định hướng theo yếu tố (factor-driven), xây dựng từ dữ liệu và kiểm soát chặt chẽ rủi ro sụt giảm (drawdown) sẽ mang lại hiệu quả bền vững hơn cho nhà đầu tư.",
+            principles: [
+                { label: "Có hệ thống", body: "Mọi quyết định đều dựa trên quy tắc được văn bản hóa, không phải ý kiến tùy hứng hay những câu chuyện thị trường." },
+                { label: "Dẫn dắt bởi nhân tố", body: "Danh mục nghiêng về các nhân tố giá trị, chất lượng và động lượng." },
+                { label: "Thiết kế cho thị trường nội địa", body: "Xây dựng dựa trên thực tế về thanh khoản, quy định và công bổ thông tin tại Việt Nam." },
+                { label: "Ý thức về rủi ro", body: "Mức sụt giảm, thanh khoản và hành vi thị trường là đầu vào trong thiết kế—không phải những yếu tố xem xét sau cùng." },
+            ],
+            objective:
+                "Mục tiêu rõ ràng: hướng đến lợi nhuận dài hạn hấp dẫn sau điều chỉnh rủi ro từ cổ phiếu Việt Nam, với lộ trình mà các nhà phân bổ vốn tổ chức có thể hiểu, giám sát và đặt câu hỏi. Khung phương pháp của ASC được neo vào các phần bù giá trị, chất lượng và động lượng đã được nghiên cứu kỹ lưỡng, kết hợp với lăng kính ổn định bao gồm biến động thấp, hành vi sụt giảm và các yếu tố thanh khoản.",
+            processTitle: "Từ triết lý đến khung phương pháp",
+            processIntro: "Chúng tôi triển khai triết lý này như một quy trình nghiên cứu và kỹ thuật đứng sau mọi chiến lược của ASC.",
+            process: [
+                { label: "Bước 01: Dữ liệu & chẩn đoán", body: "Thu thập và làm sạch dữ liệu theo thời điểm về các công ty và giá cổ phiếu Việt Nam, tập trung vào thanh khoản và chất lượng công bố thông tin." },
+                { label: "Bước 02: Nghiên cứu nhân tố", body: "Xác định cách các nhân tố giá trị, chất lượng và động lượng được thưởng qua nhiều giai đoạn thị trường khác nhau, bao gồm cả những thời kỳ căng thẳng." },
+                { label: "Bước 03: Quy tắc danh mục", body: "Mã hóa các phát hiện thành quy tắc xác định nên sở hữu gì, bao nhiêu, và điều chỉnh như thế nào khi các yếu tố cơ bản, giá cả và rủi ro thay đổi." },
+                { label: "Bước 04: Kiểm thử & đánh giá", body: "Kiểm thử các thay đổi trước khi triển khai thực tế và đánh giá hiệu suất thực—bao gồm mức sụt giảm—so với kỳ vọng." },
+            ],
             blocks: [
                 {
                     title: "Xác định vũ trụ đầu tư",
@@ -460,6 +494,17 @@ export const i18n = {
                     icon: "shield",
                 },
             ],
+            humanJudgement: {
+                title: "Phán đoán con người và dữ liệu cùng phối hợp",
+                intro: "Quy trình của chúng tôi mang tính định lượng, nhưng không phải tự động hóa chỉ vì tự động hóa. Phán đoán con người được đưa vào ở những khâu mang lại giá trị cao nhất:",
+                steps: [
+                    "Lựa chọn và làm sạch dữ liệu thị trường và doanh nghiệp.",
+                    "Quyết định nhấn mạnh nhân tố nào và kết hợp chúng ra sao.",
+                    "Thiết lập giới hạn danh mục và rủi ro phản ánh cấu trúc thị trường Việt Nam.",
+                    "Đánh giá cách danh mục vận hành trong các môi trường khác nhau.",
+                ],
+                note: "Việc triển khai hàng ngày tuân theo các quy tắc đã được văn bản hóa để đảm bảo phản ứng nhất quán và có thể kiểm toán, trong khi hoạt động nghiên cứu tiếp tục phát triển ở hậu trường.",
+            },
             flow: [
                 { label: "Dữ liệu", desc: "Giá, thông tin doanh nghiệp, bối cảnh thị trường.", icon: "database" },
                 { label: "Quy tắc", desc: "Tiêu chí mua, quy mô và cắt giảm được xác định trước.", icon: "sliders" },
@@ -477,10 +522,57 @@ export const i18n = {
                 { label: "Kiểm soát phơi nhiễm", desc: "Giám sát độ nhạy thị trường và điều chỉnh khi rủi ro vượt ra ngoài phạm vi ủy thác.", color: "#94A3B8" },
                 { label: "Dải drawdown và phản ứng", desc: "Theo dõi khoảng cách từ đỉnh; giảm rủi ro dần dần khi mức lỗ phá vỡ các ngưỡng đã thống nhất.", color: "#D97706" },
             ],
+            edge: {
+                title: "Lợi thế của chúng tôi tại Việt Nam",
+                bullets: [
+                    "Tập trung chuyên biệt vào cổ phiếu Việt Nam, được hiệu chỉnh theo dữ liệu, thanh khoản và quy định nội địa.",
+                    "Mức độ phơi nhiễm nhân tố minh bạch (giá trị, chất lượng, động lượng) thay vì các mô hình hộp đen thiếu rõ ràng.",
+                    "Kiểm soát rủi ro và nhận diện drawdown được thiết kế dựa trên đặc thù biến động của thị trường mới nổi.",
+                    "Triển khai thông qua các nhà quản lý được cấp phép để tùy chỉnh ủy thác, báo cáo và các vấn đề về thuế.",
+                ],
+            },
+            expectations: {
+                title: "Kỳ vọng của nhà đầu tư – và những gì không nên kỳ vọng",
+                goals: [
+                    "Hướng tới lợi nhuận điều chỉnh rủi ro cao hơn so với phương pháp “mua và nắm giữ chỉ số” thông thường qua một chu kỳ thị trường đầy đủ.",
+                    "Hạn chế mức độ sụt giảm và thời gian hồi phục của các đợt drawdown lớn so với thị trường chung.",
+                    "Duy trì một quy trình mà nhà đầu tư có thể hiểu, giám sát và phản biện.",
+                ],
+                disclaimer:
+                    "Chúng tôi không hứa hẹn hiệu quả vượt trội trong mọi giai đoạn hoặc bảo vệ tuyệt đối khỏi mọi đợt sụt giảm của thị trường. Việt Nam là một thị trường đầy biến động và đầu tư cổ phiếu luôn đi kèm rủi ro mất vốn. Cam kết của chúng tôi là một khung đầu tư kỷ luật, minh bạch, coi quản trị rủi ro và drawdown là những vấn đề thiết kế cốt lõi, chứ không phải là ngôn từ quảng cáo.",
+            },
+            performance: {
+                title: "Phân tích Hiệu quả & Rủi ro",
+                intro: "Cách chúng tôi trình bày hiệu suất",
+                presentation: [
+                    "Kết quả được trình bày sau khi trừ phí quản lý ước tính và chi phí giao dịch, trừ khi có ghi chú khác.",
+                    "Lợi nhuận được so sánh với các chỉ số tham chiếu phù hợp như chỉ số chứng khoán chính của Việt Nam.",
+                    "Chúng tôi hiển thị nhiều mốc thời gian (từ khi bắt đầu cộng với các giai đoạn cuốn chiếu 1, 3 và 5 năm).",
+                ],
+                metricsTitle: "Các chỉ số rủi ro và hành vi vốn",
+                metrics: [
+                    "Biến động hàng năm và sai lệch theo dõi (tracking error).",
+                    "Tỷ số Sharpe và tỷ số Information.",
+                    "Mức sụt giảm lớn nhất và thời gian hồi phục.",
+                    "Thống kê mức độ phơi nhiễm và tập trung theo ngành, nhân tố và từng mã cổ phiếu.",
+                ],
+                historyTitle: "Lịch sử thực tế và mô phỏng",
+                historyIntro:
+                    "Việt Nam vẫn là một thị trường đang phát triển, do đó lịch sử vận hành thực tế ngắn hơn so với các chỉ số toàn cầu. Để cung cấp cho nhà đầu tư cái nhìn đầy đủ hơn, chúng tôi kết hợp:",
+                history: [
+                    "Mô phỏng lịch sử được xây dựng từ dữ liệu point-in-time của Việt Nam để cho thấy khung đầu tư vận hành như thế nào qua các chu kỳ và giai đoạn căng thẳng khác nhau.",
+                    "Hiệu quả thực tế cho thấy khung đầu tư vận hành như thế nào với nguồn vốn thật, chi phí giao dịch và các hạn chế triển khai thực tế.",
+                ],
+                historyNote:
+                    "Backtest là công cụ, không phải lời hứa—chúng giúp chúng tôi và nhà đầu tư hiểu được độ nhạy đối với các môi trường khác nhau nhưng không phải là dự báo. Tất cả kết quả đều đi kèm với các công bổ về phương pháp luận, giả định và hạn chế.",
+                reportingTitle: "Tiếp cận báo cáo chi tiết",
+                reportingBody:
+                    "Các nhà đầu tư tổ chức và chuyên nghiệp có thể yêu cầu các bộ báo cáo chi tiết về hiệu suất, rủi ro và phân bổ thông qua các đối tác được cấp phép của ASC, tùy thuộc vào các điều khoản cấp sản phẩm và yêu cầu quản trị.",
+            },
         },
         solutions: {
-            title: "Giải pháp khách hàng",
-            intro: "Ủy thác đầu tư và báo cáo minh bạch dành cho nhà đầu tư tổ chức.",
+            title: "Giải pháp cho Khách hàng",
+            intro: "Ủy thác đầu tư được thiết kế riêng và báo cáo minh bạch dành cho các nhà phân bổ vốn tổ chức.",
         },
         partnerships: {
             intro:
@@ -496,19 +588,60 @@ export const i18n = {
             ],
             roles: [
                 {
+                    roleLabel: "Vốn",
                     title: "Nhà đầu tư",
                     bullets: ["Nhà đầu tư đủ điều kiện trong hoặc ngoài nước", "Tiếp cận sản phẩm do các đối tác được cấp phép của ASC quản lý"],
                 },
                 {
+                    roleLabel: "Quản Lý",
                     title: "Đối tác được cấp phép",
                     bullets: ["Nhà quản lý được cấp phép", "Tiếp nhận và phục vụ khách hàng", "Triển khai & Báo cáo danh mục"],
                 },
                 {
+                    roleLabel: "Kiến Trúc",
                     title: "Aureus Sigma Capital",
                     bullets: ["Thiết kế chiến lược dựa trên quy tắc", "Cung cấp đầu vào nghiên cứu & rủi ro", "Giám sát kỷ luật so với rào chắn kỹ thuật"],
                 },
             ],
             cta: "Xem đối tác được cấp phép",
+            mechanicsTitle: "Về đối tác được cấp phép",
+            investorNoticeTitle: "Quan trọng đối với nhà đầu tư",
+        },
+        clientSolutions: {
+            title: "Giải pháp cho Khách hàng",
+            intro: "Ủy thác đầu tư được thiết kế riêng và báo cáo minh bạch dành cho các nhà phân bổ vốn tổ chức.",
+            objectivesTitle: "Giải pháp theo mục tiêu khách hàng",
+            objectives: [
+                {
+                    title: "Khối Ngân quỹ Doanh nghiệp",
+                    body:
+                        "Dành cho các doanh nghiệp muốn phân bổ vốn vào cổ phiếu nhưng cần kiểm soát rủi ro giảm giá, chiến lược chất lượng-động lượng (quality-momentum) của chúng tôi hướng đến việc nắm bắt đà tăng trưởng của thị trường Việt Nam, đồng thời hạn chế các đợt sụt giảm sâu và kéo dài so với thị trường chung.",
+                },
+                {
+                    title: "Quỹ Hưu trí & Danh mục Bảo hiểm",
+                    body:
+                        "Dành cho nguồn vốn dài hạn, danh mục đa dạng hóa theo phong cách yếu tố (factor-tilted) của chúng tôi mang đến phương pháp tiếp cận có hệ thống với cổ phiếu Việt Nam, có thể phân tích bằng các chỉ số rủi ro và yếu tố quen thuộc.",
+                },
+                {
+                    title: "Văn phòng Gia đình & Nhà đầu tư Cá nhân Lớn",
+                    body:
+                        "Dành cho các nhà đầu tư tinh thông và nguồn vốn gia đình, phương pháp đầu tư dựa trên quy tắc của chúng tôi là sự bổ sung minh bạch cho các khoản đầu tư cổ phiếu Việt Nam theo phong cách chủ động, với quy trình và kiểm soát rủi ro được ghi chép rõ ràng.",
+                },
+            ],
+            mandateTitle: "Các tham số thiết kế ủy thác",
+            mandateIntro:
+                "Trong khuôn khổ quy định pháp luật và giấy phép của từng nhà quản lý, các chiến lược xây dựng trên nền tảng ASC có thể được tùy chỉnh theo các yếu tố như:",
+            mandateBullets: [
+                "Mức biến động mục tiêu và phạm vi sai lệch theo dõi (tracking error).",
+                "Giới hạn ngành và mức độ tập trung cho phép.",
+                "Vai trò của tiền mặt và hợp đồng tương lai chỉ số trong quản lý mức độ tiếp xúc thị trường tổng thể.",
+                "Bộ lọc môi trường, xã hội hoặc quản trị (ESG) khi có yêu cầu và khả thi theo nguồn dữ liệu sẵn có tại địa phương.",
+            ],
+            mandateNote:
+                "Quy mô đầu tư tối thiểu, cơ cấu phí và điều khoản thanh khoản được xác định ở cấp sản phẩm hoặc ủy thác bởi các nhà quản lý được cấp phép. ASC phối hợp với các đối tác để đảm bảo việc xây dựng danh mục và báo cáo phù hợp với các mục tiêu rủi ro và lợi nhuận đã thống nhất.",
+            reportingTitle: "Báo cáo và Minh bạch",
+            reportingBody:
+                "Khách hàng tổ chức nhận các báo cáo về hiệu suất, rủi ro, yếu tố và danh mục nắm giữ từ nhà quản lý được cấp phép. ASC hỗ trợ quá trình này bằng cách cung cấp phân tích, chẩn đoán và bình luận về hành vi chiến lược, đặc biệt trong các giai đoạn thị trường căng thẳng.",
         },
         insights: {
             sectionTitle: "Quan điểm",
@@ -554,9 +687,42 @@ export const i18n = {
             intro:
                 "Độc lập. Hệ thống hóa. Chuyên biệt cho Việt Nam.",
             details: [
-                "Aureus Sigma Capital (ASC) là một công ty đầu tư định lượng độc lập do nhà sáng lập sở hữu, tập trung vào cổ phiếu niêm yết tại Việt Nam. Chúng tôi thiết kế và duy trì các chiến lược hệ thống dựa trên nhân tố, áp dụng tiêu chuẩn tổ chức toàn cầu cho dữ liệu, giao dịch và quy định địa phương.",
-                "Vai trò của chúng tôi là xây dựng động cơ đầu tư đứng sau các danh mục cổ phiếu Việt Nam. Chúng tôi làm sạch và tổ chức dữ liệu thị trường và doanh nghiệp, mã hóa các hiểu biết về giá trị, chất lượng và động lượng, chuyển hóa thành các quy tắc xác định mua gì, mua bao nhiêu và khi nào điều chỉnh. Mọi vị thế trong danh mục đều có thể truy xuất ngược lại khung được văn bản hóa này.",
-                "ASC không trực tiếp quản lý tài khoản khách hàng hoặc phân phối sản phẩm. Các chiến lược của chúng tôi được triển khai độc quyền bởi các đối tác được cấp phép của ASC, những đơn vị xử lý việc tiếp nhận khách hàng, đánh giá phù hợp, thực thi và báo cáo. Sự phân tách này giữ lợi ích đồng hướng, cho phép khách hàng làm việc với các đối tác được cấp phép, đồng thời giúp ASC tập trung vào nghiên cứu, thiết kế danh mục và phân tích rủi ro, trong khi vẫn đầu tư vốn của chính công ty vào cùng các chiến lược.",
+                "Aureus Sigma Capital (ASC) là công ty đầu tư định lượng độc lập, do chính nhà sáng lập sở hữu, chuyên sâu vào thị trường cổ phiếu niêm yết tại Việt Nam. Chúng tôi thiết kế và vận hành các chiến lược đầu tư hệ thống dựa trên yếu tố nền tảng (factor-based), áp dụng chuẩn mực quản lý quỹ quốc tế vào bối cảnh dữ liệu, giao dịch và pháp lý trong nước.",
+                "Vai trò của ASC là xây dựng bộ máy đầu tư cho các danh mục cổ phiếu Việt Nam. Chúng tôi thu thập, làm sạch và tổ chức dữ liệu thị trường cùng dữ liệu doanh nghiệp; hệ thống hóa các tín hiệu về định giá, chất lượng và xu hướng giá; rồi chuyển hóa thành các quy tắc rõ ràng — xác định nên nắm giữ cổ phiếu nào, với tỷ trọng bao nhiêu, và điều chỉnh vào thời điểm nào. Mỗi khoản đầu tư trong danh mục đều có thể truy ngược về khung phương pháp luận này.",
+                "ASC không trực tiếp quản lý tài khoản khách hàng hay phân phối sản phẩm đầu tư. Các chiến lược của chúng tôi được triển khai thông qua đối tác được cấp phép, chịu trách nhiệm tiếp nhận khách hàng, đánh giá phù hợp, thực thi giao dịch và báo cáo. Mô hình phân tách này giúp đảm bảo lợi ích các bên luôn đồng nhất, khách hàng được phục vụ bởi đơn vị có đầy đủ tư cách pháp lý, còn ASC tập trung toàn lực vào nghiên cứu, thiết kế danh mục và phân tích rủi ro — đồng thời đầu tư vốn tự có của công ty theo đúng chiến lược đó.",
+            ],
+            factSheet: {
+                title: "Thông tin tổng quan",
+                items: [
+                    { label: "Năm thành lập", value: "2025" },
+                    { label: "Chiến lược", value: "Đầu tư cổ phiếu Việt Nam theo phương pháp định lượng đa yếu tố" },
+                    { label: "Triển khai", value: "Thông qua đối tác được cấp phép của ASC" },
+                ]
+            },
+            highlights: [
+                { label: "Kỷ luật hệ thống", body: "Nghiên cứu và quản trị dựa trên quy tắc tinh chuẩn cho Việt Nam.", icon: "rules" },
+                { label: "Tiêu điểm Việt Nam", body: "Chuyên sâu vào cổ phiếu niêm yết và dữ liệu thị trường nội địa.", icon: "map" },
+                { label: "Đối tác cấp phép", body: "Chiến lược được triển khai thông qua các đối tác được cấp phép của ASC.", icon: "shield-check" },
+            ],
+            bioDetails: [
+                {
+                    name: "Nguyễn Đức Huy",
+                    title: "Đồng sáng lập, Chủ tịch & Giám đốc Đầu tư (CIO)",
+                    body: [
+                        "Ông Huy là kiến trúc sư sáng lập các chiến lược cổ phiếu Việt Nam hệ thống của Aureus Sigma Capital. Với tư cách là CIO, ông thiết lập triết lý đầu tư và chương trình nghiên cứu của ASC, dẫn dắt việc nghiên cứu, thiết kế và phát triển các mô hình định lượng, khung kiểm chứng (backtesting), xây dựng danh mục và hệ thống rủi ro cho các chiến lược hiện tại và tương lai.",
+                        "Sự nghiệp của ông gắn liền với thị trường vốn Việt Nam trong hơn hai thập kỷ, bao gồm các vai trò lãnh đạo như Tổng Giám đốc Techcom Capital, Giám đốc Điều hành Techcom Securities và Giám đốc Tài chính Ngân hàng Phương Đông (OCB). Trước đó, ông dẫn dắt bộ phận tài chính doanh nghiệp và tư vấn tài chính tại Deloitte Việt Nam và sau đó là Giám đốc Tài chính tập đoàn và trưởng bộ phận đầu tư cho các nền tảng đầu tư và bất động sản tại Việt Nam và khu vực, áp dụng các mô hình định lượng, phân tích kịch bản và khung phân bổ vốn kỷ luật qua nhiều chu kỳ.",
+                        "Tại ASC, ông Huy kết hợp kinh nghiệm thị trường, ngân hàng và tư vấn này với kỷ luật hệ thống, đóng vai trò là chiến lược gia trưởng và trưởng bộ phận nghiên cứu của công ty. Ông chịu trách nhiệm phát triển và quản trị mô hình, giám sát hiệu suất và rủi ro, cũng như sự phát triển không ngừng của nền tảng dựa trên nhân tố của ASC cho các nhà đầu tư tổ chức tại Việt Nam.",
+                    ],
+                },
+                {
+                    name: "Mai Lâm Minh, CFA",
+                    title: "Đồng sáng lập & Giám đốc Điều hành (CEO)",
+                    body: [
+                        "Ông Minh dẫn dắt hoạt động thực thi, vận hành và chuyển giao cho khách hàng của ASC. Với tư cách là CEO, ông chịu trách nhiệm chuyển hóa khung nghiên cứu của ASC thành các danh mục thực tế: giám sát quy trình giao dịch, quan hệ với các công ty môi giới, kiểm soát rủi ro vận hành và giám sát danh mục hàng ngày, đồng thời làm việc với các nhà quản lý được cấp phép để đưa các chiến lược của ASC vào các ủy thác và sản phẩm được quản lý.",
+                        "Trước khi đồng sáng lập ASC, ông Minh là Trưởng bộ phận Nghiên cứu tại Fujiwara Capital, một quỹ phòng hộ vĩ mô toàn cầu, nơi ông dẫn dắt nghiên cứu đầu tư qua các chủ đề vĩ mô và ý tưởng giao dịch hệ thống. Trước đó, ông là Trưởng nhóm Nghiên cứu tại Vietbridge Capital, tập trung vào nghiên cứu cơ bản và định lượng cho tài sản Việt Nam. Ông Minh là chuyên gia phân tích tài chính (CFA charterholder) và tốt nghiệp ESCP Europe, mang lại góc nhìn vĩ mô quốc tế và đa tài sản cho các chiến lược nhân tố chuyên biệt cho Việt Nam của ASC.",
+                        "Tại ASC, ông Minh đảm bảo các quy tắc do CIO thiết kế được thực hiện một cách sạch sẽ, hiệu quả và minh bạch trong các danh mục thực tế, đồng thời đảm bảo khách hàng và đối tác nhận được thông tin rõ ràng, dựa trên dữ liệu về cách các chiến lược vận hành qua các môi trường thị trường khác nhau.",
+                    ],
+                },
             ],
             teamTitle: "Ban Lãnh đạo",
         },
