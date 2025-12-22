@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from "../components/SEO";
 import BookOpen from "lucide-react/dist/esm/icons/book-open";
 import Cpu from "lucide-react/dist/esm/icons/cpu";
 import BarChart2 from "lucide-react/dist/esm/icons/bar-chart-2";
@@ -21,6 +22,11 @@ export default function WhatWeDoPage({ t }) {
     const riskBlock = t.whatWeDo.blocks[3];
     return (
         <div className="bg-white">
+            <SEO
+                title={t.whatWeDo.sectionTitle}
+                description={t.whatWeDo.intro}
+                url="/what-we-do"
+            />
             <PageHeader
                 title={t.whatWeDo.sectionTitle || t.nav.whatWeDo}
                 subtitle={t.whatWeDo.intro}

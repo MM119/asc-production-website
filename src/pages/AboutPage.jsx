@@ -1,5 +1,6 @@
 import React from "react";
 import BookOpen from "lucide-react/dist/esm/icons/book-open";
+import SEO from "../components/SEO";
 import PageHeader from "../components/PageHeader";
 import TeamCard from "../components/TeamCard";
 import { TEAM_PHOTOS, ICON_MAP } from "../data/content";
@@ -7,6 +8,11 @@ import { TEAM_PHOTOS, ICON_MAP } from "../data/content";
 export default function AboutPage({ t }) {
     return (
         <div className="bg-white">
+            <SEO
+                title={t.about.title}
+                description={t.about.intro}
+                url="/about"
+            />
             <PageHeader
                 title={t.about.title}
                 subtitle={t.about.intro}

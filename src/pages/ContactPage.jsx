@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Mail from "lucide-react/dist/esm/icons/mail";
 import Loader2 from "lucide-react/dist/esm/icons/loader-2";
+import SEO from "../components/SEO";
 import PageHeader from "../components/PageHeader";
 
 export default function ContactPage({ t, lang }) {
@@ -52,6 +53,11 @@ export default function ContactPage({ t, lang }) {
 
     return (
         <div className="bg-white">
+            <SEO
+                title={t.contact.title}
+                description={t.contact.desc}
+                url="/contact"
+            />
             <PageHeader
                 title={t.contact.title}
                 subtitle={t.contact.desc}

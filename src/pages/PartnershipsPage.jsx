@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 import ExternalLink from "lucide-react/dist/esm/icons/external-link";
 import PageHeader from "../components/PageHeader";
 import PartnershipBridge from "../components/PartnershipBridge";
@@ -8,6 +9,11 @@ export default function PartnershipsPage({ t }) {
     const mouAnnouncement = t?.insights?.items?.find((item) => item.slug === "fides-aureus-sigma-capital-strategic-partnership");
     return (
         <div className="bg-white">
+            <SEO
+                title={t.nav.partnerships}
+                description={t.partnerships.intro}
+                url="/partnerships"
+            />
             <PageHeader
                 title={t.nav.partnerships}
                 subtitle={t.partnerships.intro}

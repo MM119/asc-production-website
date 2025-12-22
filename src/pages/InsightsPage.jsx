@@ -1,4 +1,5 @@
 import React from "react";
+import SEO from "../components/SEO";
 import FileText from "lucide-react/dist/esm/icons/file-text";
 import PageHeader from "../components/PageHeader";
 import InsightCard from "../components/InsightCard";
@@ -6,6 +7,11 @@ import InsightCard from "../components/InsightCard";
 export default function InsightsPage({ t }) {
     return (
         <div className="bg-white">
+            <SEO
+                title={t.insights.sectionTitle}
+                description={t.insights.intro}
+                url="/insights"
+            />
             <PageHeader
                 title={t.insights.sectionTitle}
                 subtitle={t.insights.intro}

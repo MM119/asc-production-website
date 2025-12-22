@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams, Navigate, Link } from "react-router-dom";
+import SEO from "../components/SEO";
 import { INSIGHTS_CONTENT } from "../data/content";
 
 const prefixBase = (src) => {
@@ -23,6 +24,12 @@ export default function InsightArticlePage({ lang, t }) {
     const gallery = article.gallery || [];
     return (
         <div className="py-16 bg-white">
+            <SEO
+                title={article.title}
+                description={article.body?.[0] || article.title}
+                url={`/insights/${slug}`}
+                image={heroImage ? article.heroImage.src : undefined}
+            />
             <div className="mx-auto max-w-3xl px-4 space-y-4">
                 <span className="text-xs uppercase tracking-wide text-slate-500">{breadcrumb}</span>
                 <h1 className="text-3xl font-semibold text-slate-900">{article.title}</h1>

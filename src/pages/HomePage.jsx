@@ -1,5 +1,6 @@
 import React from "react";
 import BookOpen from "lucide-react/dist/esm/icons/book-open";
+import SEO from "../components/SEO";
 import Hero from "../components/Hero";
 import SectionTitle from "../components/SectionTitle";
 import ProcessVisual from "../components/ProcessVisual";
@@ -11,6 +12,10 @@ export default function HomePage({ t }) {
     const previewBlocks = t.whatWeDo.blocks.slice(0, 2);
     return (
         <div>
+            <SEO
+                title={t.hero.title}
+                description={t.hero.subtitle}
+            />
             <Hero t={t} />
             <section id="what-we-do" className="py-10 md:py-16 bg-white">
                 <div className="mx-auto max-w-6xl px-4 space-y-6 md:space-y-10">
