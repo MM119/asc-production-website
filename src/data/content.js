@@ -404,6 +404,11 @@ export const i18n = {
             primaryCta: "Submit inquiry",
             emailLabel: "Email",
             email: "contact@ascap.vn",
+            addressLabel: "Offices",
+            addresses: [
+                "15 Le Thanh Ton, Saigon Ward, HCMC",
+                "21 Street 10, An Phu Ward, Thu Duc City"
+            ],
             note:
                 "For information about products, account types, or documentation, please contact ASC.",
         },
@@ -749,6 +754,11 @@ export const i18n = {
             primaryCta: "Gửi yêu cầu",
             emailLabel: "Email",
             email: "contact@ascap.vn",
+            addressLabel: "Địa chỉ",
+            addresses: [
+                "15 Lê Thánh Tôn, Phường Sài Gòn, TP. HCM",
+                "21 Đường số 10, Phường An Phú, TP. Thủ Đức"
+            ],
             note: "Để biết thông tin về sản phẩm, loại tài khoản hoặc tài liệu, vui lòng liên hệ ASC.",
         },
         legal: {

@@ -143,13 +143,25 @@ export default function ContactPage({ t, lang }) {
                         </button>
                     </form>
                 )}
-                <div className="mt-4 md:mt-6 text-sm text-slate-600">
-                    <span className="font-semibold text-slate-700">{t.contact.emailLabel}:</span>{" "}
-                    <a href={`mailto:${t.contact.email}`} className="hover:text-[#D4AF37] transition-colors break-all">
-                        {t.contact.email}
-                    </a>
+                <div className="mt-8 space-y-6 border-t border-slate-100 pt-8">
+                    <div className="flex flex-col md:flex-row md:gap-12 gap-6">
+                        <div className="flex-1">
+                            <p className="text-[10px] uppercase tracking-widest text-[#D4AF37] font-bold mb-2">{t.contact.emailLabel}</p>
+                            <a href={`mailto:${t.contact.email}`} className="text-slate-900 font-medium hover:text-[#D4AF37] transition-colors break-all text-lg">
+                                {t.contact.email}
+                            </a>
+                        </div>
+                        <div className="flex-1">
+                            <p className="text-[10px] uppercase tracking-widest text-[#D4AF37] font-bold mb-2">{t.contact.addressLabel}</p>
+                            <div className="space-y-2">
+                                {t.contact.addresses.map((addr, idx) => (
+                                    <p key={idx} className="text-slate-900 font-medium text-lg leading-snug">{addr}</p>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                    <p className="text-sm text-slate-500 italic">{t.contact.note}</p>
                 </div>
-                <p className="mt-2 text-sm text-slate-600">{t.contact.note}</p>
             </div>
         </div>
     );

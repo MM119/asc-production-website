@@ -128,9 +128,19 @@ export default function Layout({ t, lang, setLang, children }) {
                     </div>
                     <div className="space-y-4 text-sm">
                         <div className="font-serif text-xl text-slate-100 tracking-tight">Aureus Sigma Capital</div>
-                        <div className="flex flex-col gap-2 text-slate-400">
-                            <a href={`mailto:${t.contact.email}`} className="hover:text-[#D4AF37] transition-colors break-all">{t.contact.email}</a>
-                            <span>{t.contact.note}</span>
+                        <div className="flex flex-col gap-3 text-slate-400">
+                            <div>
+                                <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold mb-1">{t.contact.emailLabel}</p>
+                                <a href={`mailto:${t.contact.email}`} className="hover:text-[#D4AF37] transition-colors break-all">{t.contact.email}</a>
+                            </div>
+                            <div>
+                                <p className="text-[10px] uppercase tracking-widest text-slate-500 font-bold mb-1">{t.contact.addressLabel}</p>
+                                <div className="space-y-1">
+                                    {t.contact.addresses.map((addr, idx) => (
+                                        <p key={idx}>{addr}</p>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
