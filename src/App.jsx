@@ -13,13 +13,13 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
-// Get initial language from localStorage, defaulting to 'en'
+// Get initial language from localStorage, defaulting to 'vi'
 const getInitialLang = () => {
   try {
     const stored = localStorage.getItem("asc-lang");
-    return stored === "vi" ? "vi" : "en";
+    return stored === "en" ? "en" : "vi";
   } catch {
-    return "en";
+    return "vi";
   }
 };
 

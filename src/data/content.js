@@ -423,7 +423,7 @@ export const i18n = {
             whatWeDo: "Phương pháp",
             solutions: "Giải pháp",
             partnerships: "Đối tác",
-            insights: "Thông tin",
+            insights: "Góc nhìn",
             about: "Giới thiệu",
             contact: "Liên hệ",
         },
@@ -651,7 +651,7 @@ export const i18n = {
                 "Khách hàng tổ chức nhận các báo cáo về hiệu suất, rủi ro, nhân tố và danh mục nắm giữ từ nhà quản lý được cấp phép. ASC hỗ trợ quá trình này bằng cách cung cấp phân tích, chẩn đoán và bình luận về hành vi chiến lược, đặc biệt trong các giai đoạn thị trường biến động mạnh.",
         },
         insights: {
-            sectionTitle: "Thông tin",
+            sectionTitle: "Góc nhìn",
             intro: "Chúng tôi xuất bản các ghi chú ngắn gọn cho nhà đầu tư muốn hiểu cách chúng tôi tư duy về cổ phiếu Việt Nam, quản trị rủi ro và vai trò của chiến lược hệ thống trong danh mục tổng thể. Mỗi bài viết tập trung vào một ý tưởng quan trọng đối với các nhà phân bổ vốn dài hạn.",
             readMore: "Đọc bài viết",
             backToInsights: "Xem thêm bài viết",

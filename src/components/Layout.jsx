@@ -7,7 +7,12 @@ import { LOGO_SRC, NAV_LINKS } from "../data/content";
 
 export default function Layout({ t, lang, setLang, children }) {
     const location = useLocation();
-    const [cookieDismissed, setCookieDismissed] = useState(false);
+    const [cookieDismissed, setCookieDismissed] = useState(() => {
+        if (typeof window !== 'undefined') {
+            return localStorage.getItem('cookieDismissed') === 'true';
+        }
+        return false;
+    });
     const [logoOk, setLogoOk] = useState(true);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -107,68 +112,7 @@ export default function Layout({ t, lang, setLang, children }) {
                     </button>
                 </div>
 
-                {/* Mobile Navigation Overlay */}
-                <div
-                    className={`fixed inset-0 mobile-overlay transition-opacity duration-300 md:hidden ${mobileMenuOpen ? "opacity-100 z-40" : "opacity-0 pointer-events-none z-[-1]"
-                        }`}
-                    onClick={() => setMobileMenuOpen(false)}
-                />
-
-                {/* Mobile Navigation Menu */}
-                <div
-                    id="mobile-nav-menu"
-                    className={`fixed top-0 right-0 h-full w-72 max-w-[85vw] shadow-2xl transform transition-transform duration-300 ease-out z-50 md:hidden ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-                        }`}
-                    style={{
-                        background: '#ffffff',
-                        backgroundColor: '#ffffff',
-                    }}
-                >
-                    <nav
-                        className="h-full flex flex-col"
-                        style={{
-                            background: '#ffffff',
-                            backgroundColor: '#ffffff',
-                        }}
-                    >
-                        <div
-                            className="flex items-center justify-between p-4 border-b border-slate-100"
-                            style={{ background: '#ffffff' }}
-                        >
-                            <span className="font-serif font-semibold text-slate-900">Menu</span>
-                            <button
-                                className="p-2 rounded-lg hover:bg-slate-100 transition-colors"
-                                onClick={() => setMobileMenuOpen(false)}
-                                aria-label="Close menu"
-                            >
-                                <X className="h-5 w-5 text-slate-700" />
-                            </button>
-                        </div>
-                        <div
-                            className="flex flex-col py-4 flex-1"
-                            style={{ background: '#ffffff' }}
-                        >
-                            {NAV_LINKS.map((item) => (
-                                <Link
-                                    key={item.path}
-                                    to={item.path}
-                                    onClick={() => setMobileMenuOpen(false)}
-                                    className={`px-6 py-4 text-base font-medium transition-all duration-200 flex items-center gap-3 ${location.pathname === item.path
-                                        ? "bg-slate-50 text-slate-900 border-l-4 border-[#D4AF37]"
-                                        : "text-slate-600 hover:bg-slate-50 hover:text-slate-900 border-l-4 border-transparent"
-                                        }`}
-                                >
-                                    {t.nav[item.labelKey]}
-                                </Link>
-                            ))}
-                        </div>
-                        <div className="p-4 border-t border-slate-100" style={{ background: '#f8fafc' }}>
-                            <div className="text-xs text-slate-500 text-center">
-                                © 2025 Aureus Sigma Capital
-                            </div>
-                        </div>
-                    </nav>
-                </div>
+                {/* Mobile Menu Button - Moved overlay and menu to root level */}
             </header>
 
             <main className="flex-1">{children}</main>
@@ -193,6 +137,69 @@ export default function Layout({ t, lang, setLang, children }) {
                 <div className="border-t border-slate-800 py-4 md:py-6 text-center text-xs text-slate-500 tracking-wide px-4">{t.legal.rights}</div>
             </footer>
 
+            {/* Mobile Navigation Overlay - Moved to root for full page coverage */}
+            <div
+                className={`fixed inset-0 mobile-overlay transition-opacity duration-300 md:hidden ${mobileMenuOpen ? "opacity-100 z-[60]" : "opacity-0 pointer-events-none z-[-1]"
+                    }`}
+                onClick={() => setMobileMenuOpen(false)}
+            />
+
+            {/* Mobile Navigation Menu - Moved to left side */}
+            <div
+                id="mobile-nav-menu"
+                className={`fixed top-0 left-0 h-full w-72 max-w-[85vw] shadow-2xl transform transition-transform duration-300 ease-out z-[70] md:hidden ${mobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+                    }`}
+                style={{
+                    background: '#ffffff',
+                    backgroundColor: '#ffffff',
+                }}
+            >
+                <nav
+                    className="h-full flex flex-col"
+                    style={{
+                        background: '#ffffff',
+                        backgroundColor: '#ffffff',
+                    }}
+                >
+                    <div
+                        className="flex items-center justify-between p-4 border-b border-slate-100"
+                        style={{ background: '#ffffff' }}
+                    >
+                        <span className="font-serif font-semibold text-slate-900">Menu</span>
+                        <button
+                            className="p-2 rounded-lg hover:bg-slate-100 transition-colors"
+                            onClick={() => setMobileMenuOpen(false)}
+                            aria-label="Close menu"
+                        >
+                            <X className="h-5 w-5 text-slate-700" />
+                        </button>
+                    </div>
+                    <div
+                        className="flex flex-col py-4 flex-1"
+                        style={{ background: '#ffffff' }}
+                    >
+                        {NAV_LINKS.map((item) => (
+                            <Link
+                                key={item.path}
+                                to={item.path}
+                                onClick={() => setMobileMenuOpen(false)}
+                                className={`px-6 py-4 text-base font-medium transition-all duration-200 flex items-center gap-3 ${location.pathname === item.path
+                                    ? "bg-slate-50 text-slate-900 border-l-4 border-[#D4AF37]"
+                                    : "text-slate-600 hover:bg-slate-50 hover:text-slate-900 border-l-4 border-transparent"
+                                    }`}
+                            >
+                                {t.nav[item.labelKey]}
+                            </Link>
+                        ))}
+                    </div>
+                    <div className="p-4 border-t border-slate-100" style={{ background: '#f8fafc' }}>
+                        <div className="text-xs text-slate-500 text-center">
+                            © 2025 Aureus Sigma Capital
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
             {/* Cookie Banner */}
             {!cookieDismissed && (
                 <div className="fixed bottom-0 md:bottom-4 inset-x-0 px-0 md:px-4 z-40">
@@ -200,7 +207,10 @@ export default function Layout({ t, lang, setLang, children }) {
                         <p className="text-xs text-slate-600 flex-1">{t.cookie.text}</p>
                         <button
                             className="px-4 py-2 text-xs rounded-md bg-slate-900 text-white hover:bg-slate-800 transition-colors shrink-0 w-full sm:w-auto"
-                            onClick={() => setCookieDismissed(true)}
+                            onClick={() => {
+                                setCookieDismissed(true);
+                                localStorage.setItem('cookieDismissed', 'true');
+                            }}
                         >
                             {t.cookie.accept}
                         </button>
