@@ -58,20 +58,20 @@ export default function ContactPage({ t, lang }) {
                 image="/assets/others/hcmc_skyline_1.png"
                 parentSection="Institutional Access"
             />
-            <div className="mx-auto max-w-3xl px-4 pb-16">
+            <div className="mx-auto max-w-3xl px-4 pb-10 md:pb-16">
                 {status === "success" ? (
-                    <div className="border border-emerald-200 bg-emerald-50 text-emerald-900 rounded-xl p-6">
+                    <div className="border border-emerald-200 bg-emerald-50 text-emerald-900 rounded-xl p-4 md:p-6 text-sm md:text-base">
                         {lang === "en"
                             ? "Thank you for your inquiry. We will review your message and respond via email."
                             : "Cảm ơn bạn. Chúng tôi sẽ phản hồi sớm."}
                     </div>
                 ) : (
                     <form
-                        className="border border-slate-200 rounded-xl bg-white p-6 space-y-4 shadow-sm"
+                        className="border border-slate-200 rounded-xl bg-white p-4 md:p-6 space-y-4 shadow-sm"
                         onSubmit={handleSubmit}
                     >
                         <div className="flex items-center gap-2 text-slate-800">
-                            <Mail className="h-5 w-5" />
+                            <Mail className="h-5 w-5 shrink-0" />
                             <span className="text-sm font-semibold">{t.contact.title}</span>
                         </div>
 
@@ -83,14 +83,14 @@ export default function ContactPage({ t, lang }) {
 
                         <input
                             name="name"
-                            className="w-full rounded-lg border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent"
+                            className="w-full rounded-lg border border-slate-300 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent"
                             placeholder={lang === "en" ? "Name" : "Họ và tên"}
                             required
                             disabled={status === "loading"}
                         />
                         <input
                             name="email"
-                            className="w-full rounded-lg border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent"
+                            className="w-full rounded-lg border border-slate-300 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent"
                             placeholder="Email"
                             type="email"
                             required
@@ -98,32 +98,32 @@ export default function ContactPage({ t, lang }) {
                         />
                         <input
                             name="organization"
-                            className="w-full rounded-lg border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent"
+                            className="w-full rounded-lg border border-slate-300 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent"
                             placeholder={lang === "en" ? "Organization" : "Tổ chức"}
                             required
                             disabled={status === "loading"}
                         />
                         <textarea
                             name="message"
-                            className="w-full rounded-lg border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent"
+                            className="w-full rounded-lg border border-slate-300 px-4 py-3 text-base focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent"
                             rows={4}
                             placeholder={lang === "en" ? "Objectives or notes" : "Mục tiêu hoặc ghi chú"}
                             disabled={status === "loading"}
                         />
-                        <label className="flex gap-2 text-sm text-slate-700">
+                        <label className="flex gap-3 text-sm text-slate-700">
                             <input
                                 type="checkbox"
                                 name="investor_confirmation"
                                 value="I confirm that I am an institutional/professional investor or represent a licensed entity."
                                 required
-                                className="mt-1"
+                                className="mt-0.5 h-5 w-5 shrink-0"
                                 disabled={status === "loading"}
                             />
-                            <span>{lang === "en" ? "I confirm that I am an institutional/professional investor or represent a licensed entity." : "Tôi xác nhận là nhà đầu tư tổ chức/chuyên nghiệp hoặc đại diện tổ chức được cấp phép."}</span>
+                            <span className="leading-relaxed">{lang === "en" ? "I confirm that I am an institutional/professional investor or represent a licensed entity." : "Tôi xác nhận là nhà đầu tư tổ chức/chuyên nghiệp hoặc đại diện tổ chức được cấp phép."}</span>
                         </label>
                         <button
                             type="submit"
-                            className="inline-flex items-center gap-2 rounded-md bg-slate-900 text-white px-5 py-3 text-sm font-medium hover:bg-slate-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="w-full md:w-auto inline-flex items-center justify-center gap-2 rounded-md bg-slate-900 text-white px-6 py-3.5 text-sm font-medium hover:bg-slate-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                             disabled={status === "loading"}
                         >
                             {status === "loading" ? (
@@ -137,9 +137,9 @@ export default function ContactPage({ t, lang }) {
                         </button>
                     </form>
                 )}
-                <div className="mt-6 text-sm text-slate-600">
+                <div className="mt-4 md:mt-6 text-sm text-slate-600">
                     <span className="font-semibold text-slate-700">{t.contact.emailLabel}:</span>{" "}
-                    <a href={`mailto:${t.contact.email}`} className="hover:text-[#D4AF37] transition-colors">
+                    <a href={`mailto:${t.contact.email}`} className="hover:text-[#D4AF37] transition-colors break-all">
                         {t.contact.email}
                     </a>
                 </div>
@@ -148,3 +148,4 @@ export default function ContactPage({ t, lang }) {
         </div>
     );
 }
+

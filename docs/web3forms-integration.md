@@ -34,12 +34,21 @@ The contact form on the website uses [Web3Forms](https://web3forms.com) to send 
 
 ## Email Configuration
 
-The following hidden fields are configured in the form:
+The form data is sent as JSON to the Web3Forms API:
 
-```html
-<input type="hidden" name="access_key" value="03fdcd58-65b8-468c-a6a2-68f54c7b0da0" />
-<input type="hidden" name="subject" value="New Inquiry from ASC Website" />
-<input type="hidden" name="from_name" value="ASC Website Contact Form" />
+```javascript
+const data = {
+    access_key: "03fdcd58-65b8-468c-a6a2-68f54c7b0da0",
+    subject: "New Inquiry from ASC Website",
+    from_name: "ASC Website Contact Form",
+    name: form.name.value,
+    email: form.email.value,
+    organization: form.organization.value,
+    message: form.message.value,
+    investor_confirmation: form.investor_confirmation.checked 
+        ? "Confirmed - Institutional/Professional Investor" 
+        : "Not confirmed",
+};
 ```
 
 ## File Location
@@ -73,14 +82,51 @@ If the access key is compromised:
 3. Generate a new access key
 4. Update the key in `src/pages/ContactPage.jsx`
 
+## Content Security Policy (CSP)
+
+For the form to work on production, the website requires a Content Security Policy that allows connections to the Web3Forms API.
+
+The CSP is configured in `index.html`:
+
+```html
+<meta http-equiv="Content-Security-Policy" 
+  content="default-src 'self'; 
+           script-src 'self' 'unsafe-inline' 'unsafe-eval'; 
+           style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+           font-src 'self' https://fonts.gstatic.com; 
+           img-src 'self' data: https:; 
+           connect-src 'self' https://api.web3forms.com https://fonts.googleapis.com https://fonts.gstatic.com;" />
+```
+
+### Key CSP Directives
+
+| Directive | Purpose |
+|-----------|---------|
+| `connect-src 'self' https://api.web3forms.com` | Allows form submissions to Web3Forms API |
+| `style-src https://fonts.googleapis.com` | Allows Google Fonts CSS |
+| `font-src https://fonts.gstatic.com` | Allows Google Fonts files |
+| `img-src 'self' data: https:` | Allows images from self, data URIs, and HTTPS sources |
+
+### CSP Troubleshooting
+
+If you see "Network error" when submitting the form:
+
+1. Open browser Developer Tools (F12)
+2. Check the Console tab for CSP violation errors
+3. Look for `connect-src` directive blocking `api.web3forms.com`
+4. Ensure the CSP meta tag in `index.html` includes the Web3Forms domain
+
 ## Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
 | Form not submitting | Check browser console for network errors |
+| "Network error" on production | Verify CSP includes `https://api.web3forms.com` in `connect-src` |
 | Emails not received | Check spam folder, verify email in Web3Forms dashboard |
 | Access key invalid | Regenerate key from dashboard |
+| CSP blocking requests | Update CSP meta tag in `index.html` |
 
 ---
 
 *Last updated: 2025-12-22*
+

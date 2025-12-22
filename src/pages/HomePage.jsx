@@ -12,19 +12,19 @@ export default function HomePage({ t }) {
     return (
         <div>
             <Hero t={t} />
-            <section id="what-we-do" className="py-16 bg-white">
-                <div className="mx-auto max-w-6xl px-4 space-y-10">
-                    <div className="text-center max-w-3xl mx-auto mb-16">
-                        <div className="w-16 h-1 bg-[#D4AF37] mx-auto mb-6" />
-                        <h2 className="text-4xl md:text-5xl font-serif font-medium text-slate-900 mb-6 tracking-tight">
+            <section id="what-we-do" className="py-10 md:py-16 bg-white">
+                <div className="mx-auto max-w-6xl px-4 space-y-6 md:space-y-10">
+                    <div className="text-center max-w-3xl mx-auto mb-8 md:mb-16">
+                        <div className="w-12 md:w-16 h-1 bg-[#D4AF37] mx-auto mb-4 md:mb-6" />
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-slate-900 mb-4 md:mb-6 tracking-tight">
                             {t.whatWeDo.sectionTitle || t.nav.whatWeDo}
                         </h2>
-                        <p className="text-xl text-slate-600 leading-relaxed font-light">
+                        <p className="text-base md:text-lg lg:text-xl text-slate-600 leading-relaxed font-light">
                             {t.whatWeDo.intro}
                         </p>
                     </div>
-                    <div className="grid gap-16 lg:grid-cols-2 items-start mb-20">
-                        <div className="space-y-2 order-2 lg:order-1 pt-4">
+                    <div className="grid gap-8 md:gap-16 lg:grid-cols-2 items-start mb-12 md:mb-20">
+                        <div className="space-y-2 order-2 lg:order-1 pt-2 md:pt-4">
                             {previewBlocks.map((block, idx) => (
                                 <NarrativeCard key={block.title} item={block} index={idx} />
                             ))}
@@ -43,3 +43,4 @@ export default function HomePage({ t }) {
         </div>
     );
 }
+

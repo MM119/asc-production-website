@@ -12,8 +12,8 @@ export default function InsightsPage({ t }) {
                 image="/assets/others/office_minimal_modern_1.png"
                 parentSection="Research"
             />
-            <div className="mx-auto max-w-6xl px-6 space-y-12 pb-24">
-                <div className="grid gap-6 md:grid-cols-2">
+            <div className="mx-auto max-w-6xl px-4 md:px-6 space-y-8 md:space-y-12 pb-12 md:pb-24">
+                <div className="grid gap-4 md:gap-6 md:grid-cols-2">
                     {t.insights.items.map((item) => (
                         <InsightCard
                             key={item.slug}
@@ -27,3 +27,4 @@ export default function InsightsPage({ t }) {
         </div>
     );
 }
+
