@@ -407,7 +407,7 @@ export const i18n = {
             addressLabel: "Offices",
             addresses: [
                 "15 Le Thanh Ton, Saigon Ward, HCMC",
-                "21 Street 10, An Phu Ward, Thu Duc City"
+                "21 Street 10, An Phu Ward, Thu Duc City, HCMC"
             ],
             note:
                 "For information about products, account types, or documentation, please contact ASC.",
@@ -757,7 +757,7 @@ export const i18n = {
             addressLabel: "Địa chỉ",
             addresses: [
                 "15 Lê Thánh Tôn, Phường Sài Gòn, TP. HCM",
-                "21 Đường số 10, Phường An Phú, TP. Thủ Đức"
+                "21 Đường số 10, Phường An Phú, TP. Thủ Đức, TP. HCM"
             ],
             note: "Để biết thông tin về sản phẩm, loại tài khoản hoặc tài liệu, vui lòng liên hệ ASC.",
         },
