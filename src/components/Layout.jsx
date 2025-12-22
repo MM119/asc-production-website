@@ -115,41 +115,60 @@ export default function Layout({ t, lang, setLang, children }) {
                 />
 
                 {/* Mobile Navigation Menu */}
-                <nav
-                    className={`fixed top-0 right-0 h-full w-72 max-w-[85vw] mobile-menu-panel shadow-2xl transform transition-transform duration-300 ease-out z-50 md:hidden ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+                <div
+                    id="mobile-nav-menu"
+                    className={`fixed top-0 right-0 h-full w-72 max-w-[85vw] shadow-2xl transform transition-transform duration-300 ease-out z-50 md:hidden ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
                         }`}
+                    style={{
+                        background: '#ffffff',
+                        backgroundColor: '#ffffff',
+                    }}
                 >
-                    <div className="flex items-center justify-between p-4 border-b border-slate-100">
-                        <span className="font-serif font-semibold text-slate-900">Menu</span>
-                        <button
-                            className="p-2 rounded-lg hover:bg-slate-100 transition-colors"
-                            onClick={() => setMobileMenuOpen(false)}
-                            aria-label="Close menu"
+                    <nav
+                        className="h-full flex flex-col"
+                        style={{
+                            background: '#ffffff',
+                            backgroundColor: '#ffffff',
+                        }}
+                    >
+                        <div
+                            className="flex items-center justify-between p-4 border-b border-slate-100"
+                            style={{ background: '#ffffff' }}
                         >
-                            <X className="h-5 w-5 text-slate-700" />
-                        </button>
-                    </div>
-                    <div className="flex flex-col py-4">
-                        {NAV_LINKS.map((item) => (
-                            <Link
-                                key={item.path}
-                                to={item.path}
+                            <span className="font-serif font-semibold text-slate-900">Menu</span>
+                            <button
+                                className="p-2 rounded-lg hover:bg-slate-100 transition-colors"
                                 onClick={() => setMobileMenuOpen(false)}
-                                className={`px-6 py-4 text-base font-medium transition-all duration-200 flex items-center gap-3 ${location.pathname === item.path
-                                    ? "bg-slate-50 text-slate-900 border-l-4 border-[#D4AF37]"
-                                    : "text-slate-600 hover:bg-slate-50 hover:text-slate-900 border-l-4 border-transparent"
-                                    }`}
+                                aria-label="Close menu"
                             >
-                                {t.nav[item.labelKey]}
-                            </Link>
-                        ))}
-                    </div>
-                    <div className="absolute bottom-0 left-0 right-0 p-4 border-t border-slate-100 bg-slate-50">
-                        <div className="text-xs text-slate-500 text-center">
-                            © 2025 Aureus Sigma Capital
+                                <X className="h-5 w-5 text-slate-700" />
+                            </button>
                         </div>
-                    </div>
-                </nav>
+                        <div
+                            className="flex flex-col py-4 flex-1"
+                            style={{ background: '#ffffff' }}
+                        >
+                            {NAV_LINKS.map((item) => (
+                                <Link
+                                    key={item.path}
+                                    to={item.path}
+                                    onClick={() => setMobileMenuOpen(false)}
+                                    className={`px-6 py-4 text-base font-medium transition-all duration-200 flex items-center gap-3 ${location.pathname === item.path
+                                        ? "bg-slate-50 text-slate-900 border-l-4 border-[#D4AF37]"
+                                        : "text-slate-600 hover:bg-slate-50 hover:text-slate-900 border-l-4 border-transparent"
+                                        }`}
+                                >
+                                    {t.nav[item.labelKey]}
+                                </Link>
+                            ))}
+                        </div>
+                        <div className="p-4 border-t border-slate-100" style={{ background: '#f8fafc' }}>
+                            <div className="text-xs text-slate-500 text-center">
+                                © 2025 Aureus Sigma Capital
+                            </div>
+                        </div>
+                    </nav>
+                </div>
             </header>
 
             <main className="flex-1">{children}</main>

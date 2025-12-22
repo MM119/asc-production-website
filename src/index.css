@@ -41,6 +41,11 @@
     /* Tighter tracking for display serif */
     line-height: 1.2;
   }
+
+  /* Mobile menu - force opaque white background */
+  #mobile-nav-menu {
+    background-color: #ffffff !important;
+  }
 }
 
 @utility shadow-premium {
@@ -63,7 +68,7 @@
 
 /* Mobile menu panel with solid background for Safari iOS */
 @utility mobile-menu-panel {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   /* Solid white - ensures no transparency on Safari iOS */
   isolation: isolate;
   /* Creates new stacking context */
@@ -71,3 +76,4 @@
   /* Forces GPU layer on iOS */
   -webkit-transform: translateZ(0);
 }
+
