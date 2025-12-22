@@ -53,3 +53,21 @@
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(226, 232, 240, 0.6);
 }
+
+/* Mobile menu overlay with Safari iOS compatibility */
+@utility mobile-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+/* Mobile menu panel with solid background for Safari iOS */
+@utility mobile-menu-panel {
+  background-color: #ffffff;
+  /* Solid white - ensures no transparency on Safari iOS */
+  isolation: isolate;
+  /* Creates new stacking context */
+  transform: translateZ(0);
+  /* Forces GPU layer on iOS */
+  -webkit-transform: translateZ(0);
+}

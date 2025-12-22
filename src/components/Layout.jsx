@@ -109,14 +109,14 @@ export default function Layout({ t, lang, setLang, children }) {
 
                 {/* Mobile Navigation Overlay */}
                 <div
-                    className={`fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 md:hidden ${mobileMenuOpen ? "opacity-100 z-40" : "opacity-0 pointer-events-none z-[-1]"
+                    className={`fixed inset-0 mobile-overlay transition-opacity duration-300 md:hidden ${mobileMenuOpen ? "opacity-100 z-40" : "opacity-0 pointer-events-none z-[-1]"
                         }`}
                     onClick={() => setMobileMenuOpen(false)}
                 />
 
                 {/* Mobile Navigation Menu */}
                 <nav
-                    className={`fixed top-0 right-0 h-full w-72 max-w-[85vw] bg-white shadow-2xl transform transition-transform duration-300 ease-out z-50 md:hidden ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+                    className={`fixed top-0 right-0 h-full w-72 max-w-[85vw] mobile-menu-panel shadow-2xl transform transition-transform duration-300 ease-out z-50 md:hidden ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
                         }`}
                 >
                     <div className="flex items-center justify-between p-4 border-b border-slate-100">
@@ -136,8 +136,8 @@ export default function Layout({ t, lang, setLang, children }) {
                                 to={item.path}
                                 onClick={() => setMobileMenuOpen(false)}
                                 className={`px-6 py-4 text-base font-medium transition-all duration-200 flex items-center gap-3 ${location.pathname === item.path
-                                        ? "bg-slate-50 text-slate-900 border-l-4 border-[#D4AF37]"
-                                        : "text-slate-600 hover:bg-slate-50 hover:text-slate-900 border-l-4 border-transparent"
+                                    ? "bg-slate-50 text-slate-900 border-l-4 border-[#D4AF37]"
+                                    : "text-slate-600 hover:bg-slate-50 hover:text-slate-900 border-l-4 border-transparent"
                                     }`}
                             >
                                 {t.nav[item.labelKey]}
