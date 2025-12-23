@@ -453,9 +453,9 @@ export const i18n = {
             ],
         },
         whatWeDo: {
-            sectionTitle: "Vì sao phương pháp có hệ thống lại quan trọng tại Việt Nam",
+            sectionTitle: "Vì sao đầu tư hệ thống ở Việt Nam",
             intro:
-                "Thị trường cổ phiếu Việt Nam biến động nhanh và thường bị chi phối bởi cảm xúc. Giá có thể dao động mạnh theo tin tức, dòng tiền hay kỳ vọng chính sách. Chúng tôi tin rằng các chiến lược dựa trên quy tắc, chọn cổ phiếu theo tiêu chí cụ thể, xây dựng từ dữ liệu và kiểm soát chặt chẽ mức lỗ tối đa sẽ mang lại hiệu quả bền vững hơn cho nhà đầu tư.",
+                "Thị trường cổ phiếu Việt Nam biến động nhanh, dễ bị chi phối bởi cảm xúc và dòng tin. Chúng tôi tin rằng chiến lược dựa trên quy tắc, tiêu chí rõ ràng và kiểm soát rủi ro sẽ mang lại hiệu quả bền vững hơn.",
             principles: [
                 { label: "Có hệ thống", body: "Mọi quyết định đều dựa trên quy tắc được văn bản hóa, không phải ý kiến tùy hứng hay những câu chuyện thị trường." },
                 { label: "Chọn cổ phiếu theo tiêu chí rõ ràng", body: "Danh mục ưu tiên cổ phiếu giá hấp dẫn (value), công ty làm ăn tốt (quality) và đang có đà tăng (momentum)." },
